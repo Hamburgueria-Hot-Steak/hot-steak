@@ -107,7 +107,7 @@ const Home = () => {
                   <p>Macaxeira Frita</p>
                </div>
                 <div class="opcao-acompanhamento3">
-                  <img src="./assets/opcao-nuggets-frango-acompanhamentos.png" alt="Nuggets de Frango" />
+                  <img src="./assets/opcao-nuggets-frango-acompanhamentos.jpg" alt="Nuggets de Frango" />
                   <p>Nuggets de Frango</p>
                 </div>
               </div>
