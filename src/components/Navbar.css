@@ -1,0 +1,67 @@
+/* Estilo base para o menu-container */
+.menu-container {
+    background: #411700;
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos do menu */
+    align-items: center; /* Alinhar verticalmente os elementos no centro */
+    padding: 2vw; /* Aumente o valor conforme necessário para ajustar o tamanho do menu */
+}
+
+/* Estilo para a versão web dos links */
+.menu-container a {
+    color: white;
+    padding: 10px; /* Reduza o espaçamento horizontal e vertical conforme necessário */
+    font-family: Bigshot One;
+    text-decoration: none;
+    height: 74px; /* Defina a altura desejada, que corresponde à altura das imagens */
+    display: flex; /* Para alinhar o texto verticalmente */
+    align-items: center; /* Alinhar o texto verticalmente no centro */
+}
+
+/* Estilo para a imagem logotipo-miniatura-hot-steak (versão desktop) */
+.logotipo-miniatura-hot-steak {
+    width: 63px; /* Defina a largura desejada */
+    height: 74px; /* Defina a altura desejada para manter a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e outros elementos do menu (opcional) */
+}
+
+/* Estilo para a imagem logotipo-hot-steak (versão desktop) */
+.logotipo-hot-steak {
+    width: 403px; /* Defina a largura desejada */
+    height: 57px; /* Defina a altura desejada para manter a proporção da imagem */
+    margin-top: 10px; /* Defina o deslocamento para baixo desejado (por exemplo, 10px) */
+    margin-left: -150px; /* Ajuste o valor da margem esquerda para mover a imagem para a esquerda */
+    top: 20px;
+}
+
+/* Media query para telas menores, como tablets */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column; /* Empilhar elementos verticalmente em telas menores */
+        align-items: center; /* Alinhar elementos ao centro em telas menores */
+        padding: 10px; /* Reduza o preenchimento em telas menores */
+    }
+
+    .menu-container a {
+        height: auto; /* Redefinir a altura para se adaptar ao conteúdo em telas menores */
+        margin: 2px 0; /* Espaço entre os links em telas menores */
+        padding: 10px 20px; /* Redefinir o preenchimento para telas menores */
+    }
+
+    /* Redefinir o estilo para as imagens em telas menores, se necessário */
+    .logotipo-miniatura-hot-steak {
+        width: 35px;
+        height: auto;
+        margin-right: 0;
+        top: -10px;
+        display: block
+    }
+
+    .logotipo-hot-steak {
+        width: 100px;
+        height: auto;
+        margin-top: 30px; /* Ajuste o valor da margem superior para descer a imagem */
+        margin-left: 0; /* Redefinir a margem esquerda para telas menores */
+    }
+}
+
