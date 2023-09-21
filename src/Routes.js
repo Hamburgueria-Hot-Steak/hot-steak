@@ -10,14 +10,18 @@ const AppRoutes = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/home" element={<Home/>}></Route>
-                <Route path="/delivery" element={<Delivery/>}></Route>
-                <Route path="/sobre" element={<Sobre/>}></Route>
-                <Route path="/contato" element={<Contato/>}></Route>
-                <Route path="/login" element={<Login/>}></Route>
+                {/* Rota raiz para o componente Home */}
+                <Route path="/" element={<Home />} />
+
+                {/* Outras rotas */}
+                <Route path="/home" element={<Home />} />
+                <Route path="/delivery" element={<Delivery />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/contato" element={<Contato />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </Router>
-    )
+    );
 }
 
 export default AppRoutes;
