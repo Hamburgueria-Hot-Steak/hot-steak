@@ -16,6 +16,11 @@
     align-items: center; /* Alinhar o texto verticalmente no centro */
 }
 
+/* Classe para alinhar links à direita */
+.menu-container .align-right {
+    justify-content: flex-end; /* Alinhe os links à direita */
+}
+
 /* Estilo para a classe .logo-hot-steak */
 .logo-hot-steak {
     max-width: 15vw; /* Defina a largura máxima como 50% para que a imagem tenha proporção de 50% */
@@ -93,7 +98,7 @@
 /* Estilo para dispositivos móveis usando media query */
 @media (max-width: 768px) {
     .menu-container {
-        flex-direction: column; /* Altera a direção do flex para empilhar os elementos verticalmente */
+        flex-direction: row; /* Altera a direção do flex para empilhar os elementos verticalmente */
         align-items: center; /* Alinhe os elementos à esquerda */
         padding: 10px; /* Ajuste o preenchimento para dispositivos móveis */
         height: auto; /* Altura automática para acomodar o conteúdo empilhado */
@@ -107,4 +112,3 @@
         }
     }
 }
-
