@@ -71,16 +71,6 @@ body {
     margin-top: -780px;
 }
 
-.logo-hot-steak {
-    width: 50%;
-    height: auto;
-}
-
-.logotipo-hot-steak {
-  text-align: center;
-  margin-top: 20px; /* Ajuste a quantidade de margem superior desejada */
-}
-
 .login-container {
   background-color: #ffffff;
   padding: 20px;
@@ -90,6 +80,12 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
   text-align: center;
+}
+
+/* Desça verticalmente a logo */
+.login-container img.logotipo-hot-steak-horizontal {
+  position: relative; /* Defina a posição como relativa */
+  top: 20px; /* Desloque a imagem verticalmente para baixo em 20px */
 }
 
 h2 {
@@ -193,9 +189,3 @@ h2 {
     margin-top: 20px; /* Adicione margem superior para espaçamento do botão */
   }
 }
-
-
-
-
-
-
