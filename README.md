@@ -38,16 +38,10 @@ Estamos determinados a projetar uma página web que se destaque não apenas pela
 <b>👩‍💻Desenvolvedora Frontend/Tech Lead:</b> Maria de Fátima
 <br>
 <br>
-<b>🎨 Design UX/UI:</b> Ana Laura Acioly
+<b>🎨 Design:</b> Ana Laura Acioly, Ivanildo Marques e João Pedro Moura
 <br>
 <br>
-<b>🎨 Design UX/UI:</b> Ivanildo Marques
-<br>
-<br>
-<b>🎨 Design UX/UI:</b> João Pedro Moura
-<br>
-<br>
-<b>👨‍💻 Desenvolvedor Backend:</b> Gabriel Ávila
+<b>👨‍💻 Desenvolvedor Full-Stack:</b> Gabriel Ávila
 <br>
 <br>
 <b>👨‍💻 Desenvolvedor Backend:</b> Igor Laranjeiras</p>
