@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-end; /* Alinhe os elementos à direita */
     align-items: center; /* Alinhar verticalmente os elementos no centro */
+    width: 100%; /* Defina a largura como 100% para ocupar toda a largura disponível */
 }
 
 /* Estilo para a versão web dos links */
@@ -14,19 +15,6 @@
     height: 74px; /* Defina a altura desejada, que corresponde à altura das imagens */
     display: flex; /* Para alinhar o texto verticalmente */
     align-items: center; /* Alinhar o texto verticalmente no centro */
-}
-
-/* Classe para alinhar links à direita */
-.menu-container .align-right {
-    justify-content: flex-end; /* Alinhe os links à direita */
-}
-
-/* Estilo para a classe .logo-hot-steak */
-.logo-hot-steak {
-    max-width: 15vw; /* Defina a largura máxima como 50% para que a imagem tenha proporção de 50% */
-    height: auto; /* Mantenha a proporção original da imagem */
-    padding: 10px; /* Defina o preenchimento vertical como zero e mantenha o preenchimento horizontal */
-    margin: 0; /* Defina todas as margens como zero para remover margens */
 }
 
 /* Alinhe a logo à esquerda e centralize verticalmente */
@@ -48,14 +36,6 @@
     font-family: Bigshot One;
     text-decoration: none;
     height: 74px; /* Defina a altura desejada, que corresponde à altura das imagens */
-}
-
-/* Estilo padrão para a classe .logo-hot-steak */
-.logo-hot-steak {
-    width: 403px; /* Largura da logo */
-    height: 57px; /* Altura da logo */
-    margin-right: 20px; /* Adicione margem à direita para separar a logo dos links */
-    order: -1; /* Altera a ordem de exibição para que a logo apareça primeiro */
 }
 
 /* Estilo para os links do menu */
@@ -102,13 +82,21 @@
         align-items: center; /* Alinhe os elementos à esquerda */
         padding: 10px; /* Ajuste o preenchimento para dispositivos móveis */
         height: auto; /* Altura automática para acomodar o conteúdo empilhado */
-    }
-
-    .logo-hot-steak {
-        width: 50%; /* Largura total para dispositivos móveis */
-        max-width: none; /* Remova a largura máxima */
-        margin: 0; /* Remova a margem direita */
-        order: 0; /* Reverta a ordem de exibição para o padrão */
         }
+    }
+}
+
+/* Media query para dispositivos móveis, por exemplo, smartphones */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Alinhe o conteúdo no centro vertical */
+        text-align: center; /* Alinhe o texto ao centro */
+    }
+    .menu-container a {
+        margin: 10px; /* Adicione margens entre os links verticalmente */
+        width: auto; /* Remova a largura definida para que os links ocupem seu espaço natural */
+        padding: 1px;
     }
 }
