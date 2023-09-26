@@ -25,7 +25,7 @@ const Home = () => {
         </>
       )}
       <div className="box-titulo">
-        <img className="hamburguer-topo-pagina" src="./assets/hamburguer-topo-pagina.png" alt="" />
+        <img className="hamburguer-topo-pagina" src="./assets/Logo Hamburgueria Hot Steak Miniatura.png" alt="" />
         <div>
           <h1 className="titulo1">O MELHOR</h1>
           <h1 className="titulo2">HAMBÚRGUER</h1>
