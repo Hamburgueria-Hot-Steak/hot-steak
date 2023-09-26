@@ -22,7 +22,7 @@ body {
 }
 
 .titulo1, .titulo2 {
-    color: #F17513;
+    color: #ffffff;
     font-family: 'Bungee', sans-serif;
     font-size: 6vw; /* Ajustado para tamanho proporcional */
     margin-bottom: 2vw;
@@ -43,8 +43,9 @@ body {
 }
 
 .hamburguer-topo-pagina {
-    width: 25vw;
+    width: 18vw;
     position: relative;
+    padding: 20px;
 }
 
 .hamburguer-topo-pagina::before {
