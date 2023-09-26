@@ -56,7 +56,7 @@ const Login = () => {
     <div>
       <Link to="/Home">
         <div className="logo-container">
-          <img src="./assets/Logo Hot Steak.png" alt="Logotipo Hot Steak" />
+          <img src="./assets/Logotipo Hot Steak Horizontal.png" alt="Logotipo Hot Steak" />
         </div>
       </Link>
       <div className="login-container">
