@@ -47,5 +47,5 @@ Estamos determinados a projetar uma página web que se destaque não apenas pela
 <b>👨‍💻 Desenvolvedor Backend:</b> Igor Laranjeiras</p>
 <br>
 <br>
-<p align="center"><i>🍔 Hamburgueria Hot Steak&reg 🍔</i></p>
+<p align="center"><i><b>🍔 Hamburgueria Hot Steak&reg 🍔</b></i></p>
 <p align="center"><i>Centro Universitário de Maceió (Unima) - 2023</i></p>
