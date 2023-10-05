@@ -45,6 +45,10 @@
     margin-right: 20px; /* Adicione espaçamento entre os links */
 }
 
+.icone-compras {
+    width: 30px; /* Ajuste o valor conforme necessário */
+    height: 30px; /* Ajuste o valor conforme necessário */
+  }  
 
 /* Estilo para a classe .logo-hot-steak */
 .logo-hot-steak {
