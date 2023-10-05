@@ -8,7 +8,7 @@ const Navbar = () => {
           <a href="./Delivery">Delivery</a>
           <a href="./Sobre">Sobre</a>
           <a href="./Contato">Contato</a>
-          <a href="./Login">Login</a>
+          <a href="./Login"><img className="icone-compras" src="./assets/icon_compras.png" alt="Ícone Compras" /></a>
       </nav>
     );
 }
