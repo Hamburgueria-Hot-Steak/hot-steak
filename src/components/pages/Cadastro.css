@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Thambi+2:wght@500&family=Inter:wght@400;500&family=Righteous&display=swap');
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 90%; /* Alterado para largura relativa em vez de fixa */
+    max-width: 600px; /* Largura máxima para garantir que não fique muito largo */
+    margin: 20px auto; /* Centralizado na tela */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.titulo-cadastro {
+    font-family: 'Abel';
+    color: #C81B1B;
+    text-align: center;
+    padding: 10px;
+}
+  
+/* Exemplo de uma classe para o aviso de senha */
+    .senha-aviso {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px; /* Espaçamento superior para separar do campo de senha */
+    }
+  
+    .red-input-filled {
+        width: auto; /* Alterado para largura total */
+        padding: 10px;
+        margin-bottom: 10px; /* Adiciona espaçamento na parte inferior */
+        border: none;
+        border-bottom: 2px solid red;
+        border-radius: 0;
+        outline: none;
+        color: #C81B1B;
+        display: block; /* Alinha os campos verticalmente */
+    }       
+
+.red-input-filled::placeholder {
+    color: red;
+}
+
+.red-input-filled:focus {
+    border-color: darkred;
+}
+
+.cadastro-form {
+    text-align: center;
+    padding: 20px; /* Reduzido o preenchimento para espaçamento mais compacto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastrar-button,
+.voltar-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 16px; /* Ajustei o padding para manter o tamanho dos botões iguais */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.botoes-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Adicione este estilo para os botões dentro da classe .botoes-form */
+.botoes-form button {
+    display: inline-block;
+    margin: 0 5px; /* Adicionei uma pequena margem entre os botões */
+}
+
+/* Adicione uma media query para estilos específicos de dispositivos móveis */
+@media screen and (max-width: 600px) {
+    section {
+        width: 80%;
+        max-width: 100%; /* Largura máxima para dispositivos móveis */
+    }
+
+    .red-input-filled {
+        width: 100%;
+    }
+
+    .cadastro-form {
+        padding: 10px; /* Reduzido o preenchimento para espaçamento mais compacto em dispositivos móveis */
+    }
+}
