@@ -35,12 +35,15 @@ body {
 /* Estilos para o campo de texto preenchido */
 .red-input-filled {
   width: 50%;
+  margin: 0 auto; /* Adiciona margem automática à esquerda e à direita para centralizar */
   padding: 10px;
-  border: none; /* Remova a borda padrão */
-  border-bottom: 2px solid red; /* Adicione uma borda inferior vermelha */
-  border-radius: 0; /* Remova a borda arredondada se não for necessário */
+  border: none;
+  border-bottom: 2px solid red;
+  border-radius: 0;
   outline: none;
   color: #C81B1B;
+  display: block; /* Certifica-se de que seja exibido como bloco (um abaixo do outro) */
+  margin-bottom: 10px; /* Adiciona um pequeno espaçamento entre os campos */
 }
 
 /* Estilos para o texto dentro do campo preenchido */
@@ -52,9 +55,7 @@ body {
 .red-input-filled:focus {
   border-color: darkred; /* Cor da borda inferior quando o campo está focado */
 }
-
-
-  
+ 
   /* Estilos adicionais para os elementos do formulário */
   .tf-email, .tf-senha, .btn-entrar {
     display: block; /* Define os rótulos e campos de entrada como elementos de bloco */
@@ -72,14 +73,18 @@ body {
 }
 
 .login-container {
-  background-color: #ffffff;
-  padding: 20px;
-  width: 477px; /* Ajuste a largura conforme necessário */
-  height: auto;
-  margin: 20px auto; /* Adicione margem superior para deslocar o container para baixo */
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
-  text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 90%; /* Alterado para largura relativa em vez de fixa */
+    max-width: 600px; /* Largura máxima para garantir que não fique muito largo */
+    margin: 20px auto; /* Centralizado na tela */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px; /* Reduzido o preenchimento para espaçamento mais compacto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Desça verticalmente a logo */
@@ -164,11 +169,23 @@ h2 {
 /* Estilos para telas com largura máxima de 768px */
 @media (max-width: 768px) {
   .login-container {
-    width: 80%; /* Reduz a largura do container para 80% da largura da tela */
+    width: 60vw; /* Reduz a largura do container para 80% da largura da tela */
   }
 
+  /* Estilos para telas pequenas (como celulares) */
+@media only screen and (max-width: 400px) {
+  .red-input-filled {
+    width: 70%;
+    margin: 5px 0;
+  }
+  
+  .red-input-filled.placeholder-small::placeholder {
+    font-size: 12px; /* ou outro tamanho desejado */
+  }
+}
+
   .logo-container img {
-    width: 80%; /* Reduz o tamanho da logo para 80% da largura da tela */
+    width: 60%; /* Reduz o tamanho da logo para 80% da largura da tela */
   }
 
   .btn-entrar {
@@ -189,9 +206,3 @@ h2 {
     margin-top: 20px; /* Adicione margem superior para espaçamento do botão */
   }
 }
-
-
-
-
-
-
