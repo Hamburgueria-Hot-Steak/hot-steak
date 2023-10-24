@@ -62,11 +62,11 @@ const Login = () => {
       <div className="login-container">
         <div className="login-form">
           <p className="txt-login">FAÇA SEU LOGIN</p>
-          <div className="form-email">
-            <input
+          <div className="form-email" style={{ textAlign: 'center' }}>
+          <input
               type="text"
               placeholder="Email"
-              className="red-input-filled"
+              className="red-input-filled placeholder-small"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               ref={emailInputRef}
@@ -76,7 +76,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="Senha"
-              className="red-input-filled"
+              className="red-input-filled placeholder-small"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               maxLength="8"
@@ -84,7 +84,8 @@ const Login = () => {
               onKeyDown={handleTabKeyPress}
               tabIndex="2" // Ordem de tabulação
             />
-          </div>
+            </div>
+
           <button
             className="login-button"
             onClick={handleLoginClick}
@@ -103,14 +104,17 @@ const Login = () => {
             >
               Esqueci minha senha
             </a>
-            <a
-              href=""
-              ref={createAccountLinkRef}
-              onKeyDown={handleTabKeyPress}
-              tabIndex="5" // Ordem de tabulação
-            >
-              Criar nova conta
-            </a>
+
+            <Link to="/Cadastro">
+              <a
+                href=""
+                ref={createAccountLinkRef}
+                onKeyDown={handleTabKeyPress}
+                tabIndex="5" // Ordem de tabulação
+              >
+                Criar nova conta
+              </a>
+            </Link>
           </div>
         </div>
       </div>
