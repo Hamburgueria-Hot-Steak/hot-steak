@@ -154,7 +154,7 @@
         padding: 5px; /* Reduza o espaçamento horizontal e vertical em dispositivos móveis */
     }
 /* Estilo para dispositivos móveis usando media query */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .menu-container {
         flex-direction: row; /* Altera a direção do flex para empilhar os elementos verticalmente */
         align-items: center; /* Alinhe os elementos à esquerda */
@@ -165,7 +165,7 @@
 }
 
 /* Media query para dispositivos móveis, por exemplo, smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .menu-container {
         display: flex;
         flex-direction: row;
@@ -176,9 +176,6 @@
     .menu-container a {
         margin-top: 10px; /* Aumentei a margem superior para descer um pouco mais os links */
         padding: 0px; /* Adicionei um pouco de preenchimento para melhorar a aparência */
-        font-size: 1.3em; /* Reduzi o tamanho da fonte para tornar o menu um pouco menor */
+        font-size: 20px; /* Reduzi o tamanho da fonte para tornar o menu um pouco menor */
     }
 }
-
-  
-
