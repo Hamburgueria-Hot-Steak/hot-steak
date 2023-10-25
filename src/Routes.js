@@ -4,6 +4,7 @@ import Delivery from './components/pages/Delivery';
 import Sobre from './components/pages/Sobre';
 import Contato from './components/pages/Contato';
 import Login from './components/pages/Login';
+import Cadastro from './components/pages/Cadastro';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const AppRoutes = () => {
@@ -19,6 +20,7 @@ const AppRoutes = () => {
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/contato" element={<Contato />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/cadastro" element={<Cadastro />} />
             </Routes>
         </Router>
     );
