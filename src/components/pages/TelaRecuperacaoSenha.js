@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Loading from '../../components/loading/Loading';
 import { Link } from 'react-router-dom';
+import Loading from '../../components/loading/Loading';
 import '../../components/pages/TelaRecuperacaoSenha.css';
 
 function TelaRecuperacaoSenha() {
@@ -9,29 +9,10 @@ function TelaRecuperacaoSenha() {
   const [isLoading, setIsLoading] = useState(false);
 
   // Função auxiliar para verificar se todos os dados estão preenchidos
-  const dadosPreenchidos = () => {
-    return codigo !== ''; // Adicione outras condições conforme necessário
-  };
+  const dadosPreenchidos = () => codigo !== ''; // Adicione outras condições conforme necessário
 
   const handleAvancarClick = () => {
-    if (dadosPreenchidos()) {
-        alert('Por favor, preencha os dados.');
-      setShowWarning(false);
-      setIsLoading(true);
-
-      // Simulação de uma operação assíncrona (por exemplo, uma requisição)
-      setTimeout(() => {
-        setIsLoading(false);
-
-        // Verifica se todos os dados estão preenchidos antes de avançar
-        if (dadosPreenchidos()) {
-        } else {
-          alert('Preencha todos os campos antes de avançar.');
-        }
-      }, 2000);
-    } else {
-      setShowWarning(true);
-    }
+    setShowWarning(!dadosPreenchidos());
   };
 
   if (isLoading) {
@@ -55,14 +36,18 @@ function TelaRecuperacaoSenha() {
           onChange={(e) => setCodigo(e.target.value)}
         />
 
-        {showWarning && <p className="aviso-campo-obrigatorio" style={{ color: 'red' }}>Preencha o campo de código!</p>}
+        {showWarning && (
+          <p className="aviso-campo-obrigatorio" style={{ color: 'red' }}>
+            Preencha o campo de código!
+          </p>
+        )}
 
         <div className="botoes-tela-recuperacao-senha">
           <Link to="/login">
             <button className="voltar-button">Voltar</button>
           </Link>
 
-          <Link to="/TelaRecuperacaoSenhaCodigo">
+          <Link to={dadosPreenchidos() ? '/TelaRecuperacaoSenhaCodigo' : '/TelaRecuperacaoSenha'}>
             <button className="cadastrar-button" onClick={handleAvancarClick}>
               Avançar
             </button>

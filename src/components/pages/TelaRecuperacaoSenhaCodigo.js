@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from '../../components/loading/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../../components/pages/TelaRecuperacaoSenha.css';
 
 function TelaRecuperacaoSenha() {
@@ -45,11 +45,9 @@ function TelaRecuperacaoSenha() {
           </button>
         </Link>
         
-        <Link to="/TelaRecuperacaoSenhaCodigo">
-          <button className="cadastrar-button" onClick={handleAvancarClick}>
-            Avançar
-          </button>
-        </Link>
+        <button className="cadastrar-button" onClick={handleAvancarClick}>
+          Avançar
+        </button>
       </div>
     </section>
   );

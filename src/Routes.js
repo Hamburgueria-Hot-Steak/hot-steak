@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 import Home from './components/pages/Home';
 import Delivery from './components/pages/Delivery';
 import Sobre from './components/pages/Sobre';
@@ -9,28 +9,31 @@ import Cadastro from './components/pages/Cadastro';
 import TelaRecuperacaoSenha from './components/pages/TelaRecuperacaoSenha';
 import TelaRecuperacaoSenhaCodigo from './components/pages/TelaRecuperacaoSenhaCodigo';
 
+const routes = [
+  { path: '/', element: <Home /> },
+  { path: '/home', element: <Home /> },
+  { path: '/delivery', element: <Delivery /> },
+  { path: '/sobre', element: <Sobre /> },
+  { path: '/contato', element: <Contato /> },
+  { path: '/login', element: <Login /> },
+  { path: '/cadastro', element: <Cadastro /> },
+  {
+    path: '/TelaRecuperacaoSenha',
+    element: <TelaRecuperacaoSenha />,
+  },
+  {
+    path: '/TelaRecuperacaoSenhaCodigo',
+    element: <TelaRecuperacaoSenhaCodigo />,
+  },
+];
+
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        {/* Rota raiz para o componente Home */}
-        <Route path="/" element={<Home />} />
-
-        {/* Outras rotas */}
-        <Route path="/home" element={<Home />} />
-        <Route path="/delivery" element={<Delivery />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/TelaRecuperacaoSenha" element={<TelaRecuperacaoSenha />} />
-        <Route path="/TelaRecuperacaoSenhaCodigo" element={<TelaRecuperacaoSenhaCodigo />} />
-        
-        {/* Adicione a rota de redirecionamento condicional aqui */}
-        <Route
-          path="/TelaRecuperacaoSenha"
-          element={<Navigate to="/TelaRecuperacaoSenhaCodigo" />}
-        />
+        {routes.map(({ path, element }, index) => (
+          <Route key={index} path={path} element={element} />
+        ))}
       </Routes>
     </Router>
   );
