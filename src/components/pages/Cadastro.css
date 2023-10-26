@@ -53,8 +53,19 @@ section {
     align-items: center;
 }
 
-.cadastrar-button,
 .voltar-button {
+    background-color: #EEEEEE;
+    color: red;
+    border: none;
+    padding: 10px 16px; /* Ajustei o padding para manter o tamanho dos botões iguais */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1); /* Adicionei uma pequena sombra */
+}
+
+.cadastrar-button {
     background-color: red;
     color: white;
     border: none;

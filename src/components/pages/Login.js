@@ -96,14 +96,17 @@ const Login = () => {
             Entrar
           </button>
           <div className="links">
-            <a
-              href=""
-              ref={forgotPasswordLinkRef}
-              onKeyDown={handleTabKeyPress}
-              tabIndex="4" // Ordem de tabulação
-            >
-              Esqueci minha senha
-            </a>
+            
+            <Link to="/TelaRecuperacaoSenha">
+              <a
+                href=""
+                ref={forgotPasswordLinkRef}
+                onKeyDown={handleTabKeyPress}
+                tabIndex="4" // Ordem de tabulação
+              >
+                Esqueci minha senha
+              </a>
+            </Link>
 
             <Link to="/Cadastro">
               <a

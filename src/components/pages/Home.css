@@ -21,50 +21,25 @@ body {
     font-family: 'Battambang', sans-serif;
 }
 
-.titulo1, .titulo2 {
-    color: #ffffff;
-    font-family: 'Bungee', sans-serif;
-    font-size: 6vw; /* Ajustado para tamanho proporcional */
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    line-height: 1;
-}
-
-.titulo3 {
-    color: #F4CE07;
-    font-family: 'Bungee', sans-serif;
-    font-weight: 400;
-    font-size: 6vw; /* Ajustado para tamanho proporcional */
-    width: 100%;
-    height: auto;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    line-height: 1;
-}
-
-.hamburguer-topo-pagina {
-    width: 18vw;
-    position: relative;
-    padding: 20px;
-}
-
-.hamburguer-topo-pagina::before {
-    content: "";
-    display: block;
-    padding-top: calc(2vw / 50 * 100%); /* Calcula a proporção da imagem */
-    margin-bottom: -1vw; /* Ajusta a posição vertical da imagem */
-}
-
 .hamburguer {
     width: 100%;
     padding-bottom: 100%; /* Mantém proporção quadrada */
     background-color: red; /* Apenas para visualização */
 }
 
-.hamburguer-topo-pagina::before {
-    content: "";
-    display: block;
-    padding-top: calc(2vw / 50 * 100%); /* Calcula a proporção da imagem */
+.promocoes {
+    text-align: center;
+    width: 80%; /* ou qualquer valor desejado */
+    margin: 0 auto; /* Isso centralizará o contêiner */
+    
+    /* Espaço extra abaixo */
+    margin-bottom: 20px; /* ou qualquer valor desejado */
+    margin-top: 50px;
+}
+
+.promocoes img {
+    width: 100%; /* Faz a imagem ter 100% de largura do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
 }
 
 .hamburguer {
@@ -350,11 +325,6 @@ p {
     text-align: center;
 }
 
-.box-titulo {
-    display: flex;
-    align-items: center;
-}
-
 .opcao-hamburguer1 h1,
 .opcao-hamburguer2 h1,
 .opcao-hamburguer3 h1,
@@ -462,7 +432,7 @@ footer {
         align-items: center;
     }
 
-    .titulo1, .titulo2, .titulo3, .combo1, .combo2, .combo3, .combo4, .combo5, .combo6, .combos-hamburguer, .opcao-hamburguers {
+     .combo1, .combo2, .combo3, .combo4, .combo5, .combo6, .combos-hamburguer, .opcao-hamburguers {
         font-size: 4vw; /* Ajuste para dispositivos móveis */
     }
 
@@ -512,5 +482,13 @@ footer {
         float: none; /* Remova a flutuação */
         margin: 10px auto; /* Centralize a imagem horizontalmente com margem superior e inferior */
         max-width: 150px; /* Reduza o tamanho máximo da imagem */
+    }
+}
+
+/* Media query para dispositivos com largura de até 600 pixels (exemplo) */
+@media (max-width: 600px) {
+    .promocoes {
+        width: 80%; /* ou qualquer valor desejado para dispositivos móveis */
+        height: auto;
     }
 }

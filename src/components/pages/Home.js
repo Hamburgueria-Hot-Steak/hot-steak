@@ -24,15 +24,9 @@ const Home = () => {
           {/* ... Seu conteúdo da página ... */}
         </>
       )}
-      <div className="box-titulo">
-        <img className="hamburguer-topo-pagina" src="./assets/Logo Hamburgueria Hot Steak Miniatura.png" alt="" />
-        <div>
-          <h1 className="titulo1">O MELHOR</h1>
-          <h1 className="titulo2">HAMBÚRGUER</h1>
-          <h1 className="titulo3">DA CIDADE</h1>
-        </div>
+      <div className="promocoes">
+        <img src="./assets/promocao-hamburguer1.png" alt="Promoções" />
       </div>
-
       <h2 id="menu" className="combos-hamburguer">COMBOS</h2>
       <div className="opcoes-hamburguer-container">
           <div className="combos">
@@ -121,10 +115,7 @@ const Home = () => {
                 </div>
               </div>
           <footer>
-            <a>Quem somos</a>
-            <a>Franquias</a>
-            <a>Privacidade</a>
-            <a>Trabalhe Conosco</a>
+            <h1>Contatos</h1>
             <img class="logotipo-hot-steak-miniatura" src="./assets/Logo Hamburgueria Hot Steak Miniatura.png" alt="Logotipo Miniatura Hot Steak" />
           </footer>
       </div>

@@ -143,18 +143,20 @@ function Cadastro() {
           )}
         
         <div className="botoes-form">
-            <button
+          <Link to="/login">
+          <button
+                className="voltar-button"
+            >
+                Voltar
+            </button>
+          </Link>
+
+            <Link to="">
+                <button
                 className="cadastrar-button"
                 onClick={handleCadastrarClick}
-            >
-                Cadastrar
-            </button>
-
-            <Link to="/Login">
-                <button
-                className="voltar-button"
                 >
-                Voltar
+                Cadastrar
                 </button>
             </Link>
             </div>
