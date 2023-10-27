@@ -13,7 +13,8 @@ function Cadastro() {
         const [confirmarSenha, setConfirmarSenha] = useState('');
         const [senhaAviso, setSenhaAviso] = useState('');
         const [senhaTocada, setSenhaTocada] = useState(false); // Novo estado para verificar se a senha foi tocada
-      
+        const [avisoPreenchimento, setAvisoPreenchimento] = useState(false);
+
         useEffect(() => {
           setTimeout(() => {
             setIsLoading(false);
@@ -34,16 +35,21 @@ function Cadastro() {
           return senha.length >= 8;
         };
 
+        const dadosPreenchidos = () => {
+            return nome && endereco && telefone && email && senha && confirmarSenha;
+        };
+
         const handleCadastrarClick = () => {
-          // Verifica se algum campo está vazio
-          if (!nome || !endereco || !telefone || !email || !senha || !confirmarSenha) {
-            // Exibe a janela pop-up indicando que é necessário preencher todos os campos
-            alert('Por favor, preencha todos os campos antes de cadastrar.');
+          if (!dadosPreenchidos()) {
+            setAvisoPreenchimento(true);
           } else {
-            alert('Cadastro realizado com sucesso!')
+            // Lógica para cadastro bem-sucedido
+            alert('Cadastro realizado com sucesso!');
+            // Redirecionamento para a página de login
+            window.location.href = "/login";
           }
-        };        
-      
+        };
+
         const handleEmailChange = (event) => {
           setEmail(event.target.value);
         };
@@ -71,6 +77,8 @@ function Cadastro() {
           // Limita a confirmação de senha a 8 caracteres
           setConfirmarSenha(event.target.value.slice(0, 8));
         };
+
+
 
   if (isLoading) {
     return <Loading />;
@@ -151,18 +159,21 @@ function Cadastro() {
             </button>
           </Link>
 
-            <Link to="">
-                <button
+            <button
                 className="cadastrar-button"
                 onClick={handleCadastrarClick}
                 >
                 Cadastrar
-                </button>
-            </Link>
+            </button>
+            {avisoPreenchimento && (
+            <div style={{ color: 'red', marginBottom: '10px', fontFamily: 'Abel', marginTop: '20px' }}>
+              Por favor, preencha todos os campos antes de cadastrar.
             </div>
+          )}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
   );
 }
 
