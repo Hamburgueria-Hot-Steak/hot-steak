@@ -85,7 +85,7 @@ function TelaConfirmarSenha() {
 
         {showWarning && (
           <p className="aviso-campo-obrigatorio" style={{ color: 'red', fontSize: '20px'}}>
-            Por favor, preencha os dados corretamente.
+            Por favor, preencha os dados.
           </p>
         )}
 
@@ -102,7 +102,7 @@ function TelaConfirmarSenha() {
 
           <Link to={senha !== '' ? '/Login' : '/TelaConfirmarSenha'}>
           <button className="avancar-button" onClick={handleAvancarClick}>
-            Avançar
+           Confirmar
           </button>
         </Link>
         </div>

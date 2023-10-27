@@ -71,6 +71,10 @@ body {
         padding: 40px;
     }
 
+    .placeholder-small {
+        width: 80%;
+    }   
+
     h1 {
         font-size: 18px;
     }
