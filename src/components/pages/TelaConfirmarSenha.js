@@ -35,9 +35,6 @@ function TelaConfirmarSenha() {
     if (!dadosPreenchidos() || !senhaValida()) {
       // Se os dados NÃO estiverem preenchidos ou a senha não for válida, exiba o aviso
       setShowWarning(true);
-    } else {
-      // Se os dados estiverem preenchidos e a senha for válida, navegue para a tela de Login
-      window.location.href = '/Login';
     }
   };
 
@@ -61,7 +58,7 @@ function TelaConfirmarSenha() {
     <div>
       <div className="logotipo-hotsteak">
         <Link to="/home">
-          <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
+          <img className="logotipo-hotsteak" src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
       </div>
       <section>
@@ -71,6 +68,7 @@ function TelaConfirmarSenha() {
           type="password"
           className="red-input-filled placeholder-small"
           value={senha}
+          maxLength={8}
           onChange={(e) => {
             setSenha(e.target.value);
             setSenhaTocada(true); // Marca a senha como tocada quando o usuário digita
@@ -102,9 +100,11 @@ function TelaConfirmarSenha() {
             <button className="voltar-button">Voltar</button>
           </Link>
 
+          <Link to={senha !== '' ? '/Login' : '/TelaConfirmarSenha'}>
           <button className="avancar-button" onClick={handleAvancarClick}>
-            Confirmar
+            Avançar
           </button>
+        </Link>
         </div>
       </section>
     </div>
