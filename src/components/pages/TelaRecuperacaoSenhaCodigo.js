@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../components/loading/Loading';
-import { Link, useHistory } from 'react-router-dom';
 import '../../components/pages/TelaRecuperacaoSenha.css';
 
-function TelaRecuperacaoSenha() {
-  const [isLoading, setIsLoading] = useState(true);
+function TelaRecuperacaoSenhaCodigo() {
   const [codigo, setCodigo] = useState('');
   const [showWarning, setShowWarning] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
+  // Função auxiliar para verificar se todos os dados estão preenchidos
+  const dadosPreenchidos = () => codigo !== ''; // Adicione outras condições conforme necessário
 
   const handleAvancarClick = () => {
-    if (codigo === '') {
+    if (!dadosPreenchidos()) {
+      // Se os dados NÃO estiverem preenchidos, exiba o aviso
       setShowWarning(true);
     } else {
-      setShowWarning(false);
+      // Se os dados estiverem preenchidos, navegue para a próxima tela
+      navigate('/TelaConfirmarSenha');
     }
   };
 
@@ -27,30 +27,40 @@ function TelaRecuperacaoSenha() {
   }
 
   return (
-    <section>
-      <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
-      <p className="txt-inserir-dados">DIGITE O SEU CÓDIGO DE RECUPERAÇÃO</p>
-      <input
-        type="text"
-        className="red-input-filled placeholder-small"
-        value={codigo}
-        onChange={(e) => setCodigo(e.target.value)}
-      />
-      {showWarning && <p className="aviso-campo-obrigatorio" style={{ color: 'red' }}>Preencha o campo de código!</p>}
-
-      <div className="botoes-tela-recuperacao-senha">
-        <Link to="/Login">
-          <button className="voltar-button">
-            Voltar
-          </button>
+    <div>
+      <div className="logotipo-hotsteak">
+        <Link to="/home">
+          <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
-        
-        <button className="cadastrar-button" onClick={handleAvancarClick}>
-          Avançar
-        </button>
       </div>
-    </section>
+      <section>
+        <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
+        <p className="txt-inserir-dados">DIGITE O SEU CÓDIGO DE RECUPERAÇÃO</p>
+        <input
+          type="text"
+          className="red-input-filled placeholder-small"
+          value={codigo}
+          onChange={(e) => setCodigo(e.target.value)}
+        />
+
+        {showWarning && (
+          <p className="aviso-campo-obrigatorio" style={{ color: 'red', fontSize: '18px' }}>
+            Por favor, preencha o código de recuperação!
+          </p>
+        )}
+
+        <div className="botoes-tela-recuperacao-senha">
+          <Link to="/TelaRecuperacaoSenha">
+            <button className="voltar-button">Voltar</button>
+          </Link>
+
+          <button className="avancar-button" onClick={handleAvancarClick}>
+            Enviar Código
+          </button>
+        </div>
+      </section>
+    </div>
   );
 }
 
-export default TelaRecuperacaoSenha;
+export default TelaRecuperacaoSenhaCodigo;

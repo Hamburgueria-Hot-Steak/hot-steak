@@ -37,18 +37,18 @@ function TelaRecuperacaoSenha() {
         />
 
         {showWarning && (
-          <p className="aviso-campo-obrigatorio" style={{ color: 'red' }}>
-            Preencha o campo de código!
+          <p className="aviso-campo-obrigatorio" style={{ color: 'red', fontSize: '18px' }}>
+            Por favor, preencha seus dados!
           </p>
         )}
 
         <div className="botoes-tela-recuperacao-senha">
-          <Link to="/login">
+          <Link to="/Login">
             <button className="voltar-button">Voltar</button>
           </Link>
 
           <Link to={dadosPreenchidos() ? '/TelaRecuperacaoSenhaCodigo' : '/TelaRecuperacaoSenha'}>
-            <button className="cadastrar-button" onClick={handleAvancarClick}>
+            <button className="avancar-button" onClick={handleAvancarClick}>
               Avançar
             </button>
           </Link>
