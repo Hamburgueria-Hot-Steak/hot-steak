@@ -26,7 +26,7 @@ function TelaRecuperacaoSenha() {
           <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
       </div>
-      <section>
+      <section className="conteudo-centralizado-recuperacao-senha">
         <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
         <p className="txt-inserir-dados">INSIRA O EMAIL OU TELEFONE VINCULADO À SUA CONTA</p>
         <input

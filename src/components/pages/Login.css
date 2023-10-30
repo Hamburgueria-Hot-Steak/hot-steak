@@ -73,18 +73,18 @@ body {
 }
 
 .login-container {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 90%; /* Alterado para largura relativa em vez de fixa */
-    max-width: 600px; /* Largura máxima para garantir que não fique muito largo */
-    margin: 20px auto; /* Centralizado na tela */
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
-    text-align: center;
-    padding: 20px; /* Reduzido o preenchimento para espaçamento mais compacto */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto; /* Ajuste o valor conforme necessário para descer mais */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Desça verticalmente a logo */
