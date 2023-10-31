@@ -48,81 +48,82 @@ const Login = () => {
     }, 2000);
   }, []);
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
-    <div>
-      <Link to="/Home">
-        <div className="logo-container">
-          <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
-        </div>
-      </Link>
-      <div className="login-container">
-        <div className="login-form">
-          <p className="txt-login">FAÇA SEU LOGIN</p>
-          <div className="form-email" style={{ textAlign: 'center' }}>
-          <input
-              type="text"
-              placeholder="Email"
-              className="red-input-filled placeholder-small"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              ref={emailInputRef}
-              onKeyDown={handleTabKeyPress}
-              tabIndex="1" // Ordem de tabulação
-            />
-            <input
-              type="password"
-              placeholder="Senha"
-              className="red-input-filled placeholder-small"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              maxLength="8"
-              ref={passwordInputRef}
-              onKeyDown={handleTabKeyPress}
-              tabIndex="2" // Ordem de tabulação
-            />
+    <div className="design-tela-login">
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <Link to="/Home">
+            <div className="logo-container">
+              <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
             </div>
-
-          <button
-            className="login-button"
-            onClick={handleLoginClick}
-            ref={loginButtonRef}
-            onKeyDown={handleTabKeyPress}
-            tabIndex="3" // Ordem de tabulação
-          >
-            Entrar
-          </button>
-          <div className="links">
-            
-            <Link to="/TelaRecuperacaoSenha">
-              <a
-                href=""
-                ref={forgotPasswordLinkRef}
+          </Link>
+          <div className="login-container">
+            <div className="login-form">
+              <p className="txt-login">FAÇA SEU LOGIN</p>
+              <div className="form-email" style={{ textAlign: 'center' }}>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="red-input-filled placeholder-small"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  ref={emailInputRef}
+                  onKeyDown={handleTabKeyPress}
+                  tabIndex="1" // Ordem de tabulação
+                />
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  className="red-input-filled placeholder-small"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  maxLength="8"
+                  ref={passwordInputRef}
+                  onKeyDown={handleTabKeyPress}
+                  tabIndex="2" // Ordem de tabulação
+                />
+              </div>
+  
+              <button
+                className="login-button"
+                onClick={handleLoginClick}
+                ref={loginButtonRef}
                 onKeyDown={handleTabKeyPress}
-                tabIndex="4" // Ordem de tabulação
+                tabIndex="3" // Ordem de tabulação
               >
-                Esqueci minha senha
-              </a>
-            </Link>
-
-            <Link to="/Cadastro">
-              <a
-                href=""
-                ref={createAccountLinkRef}
-                onKeyDown={handleTabKeyPress}
-                tabIndex="5" // Ordem de tabulação
-              >
-                Criar nova conta
-              </a>
-            </Link>
+                Logar
+              </button>
+              <div className="links">
+                <Link to="/TelaRecuperacaoSenha">
+                  <a
+                    href=""
+                    ref={forgotPasswordLinkRef}
+                    onKeyDown={handleTabKeyPress}
+                    tabIndex="4" // Ordem de tabulação
+                  >
+                    Esqueci minha senha
+                  </a>
+                </Link>
+  
+                <Link to="/Cadastro">
+                  <a
+                    href=""
+                    ref={createAccountLinkRef}
+                    onKeyDown={handleTabKeyPress}
+                    tabIndex="5" // Ordem de tabulação
+                  >
+                    Criar nova conta
+                  </a>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </div>
   );
-};
+}
 
 export default Login;

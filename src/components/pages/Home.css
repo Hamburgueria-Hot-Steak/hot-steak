@@ -1,19 +1,20 @@
 @import url('https://fonts.google.com/specimen/Bigshot+One?query=bigshot+one');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
 
-body {
+.design-tela-home {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: rgba(129, 8, 8, 1);
+    background: #EAEAEA;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .txt-hamburgueres {
-    color: #FFFF00; /* Código de cor amarela */
+    background: #4F1212;
+    font-family: 'Staatliches';
+    color: #FFFFFF; /* Código de cor amarela */
 }
 
 .container {
@@ -71,7 +72,7 @@ body {
 
 
 .combo1, .combo2, .combo3, .combo4, .combo5, .combo6 {
-    font-family: Bigshot One;
+    font-family: 'Bowlby One SC', sans-serif;
     font-size: 2.5vw; /* Tamanho responsivo */
     line-height: 2.6vw;
     text-align: center;
@@ -116,9 +117,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Define o espaçamento entre as opções */
-    color: #F4CE07;
+    color: #4F1212;
 }
 
+.combo {
+    font-family: 'Bowlby One SC';
+}
 
 .grupo-1,
 .grupo-2 {
@@ -137,7 +141,7 @@ body {
 .grupo-2 .opcao-hamburguer6 {
     flex-basis: calc(33.33% - 10px); /* Reduz a largura com base nas margens e no espaçamento */
     text-align: center; /* Centraliza o conteúdo horizontalmente */
-    color: #F4CE07;
+    color: #4F1212;
     border-radius: 20px;
     margin: 0 auto; /* Define um espaçamento de margem igual para ambos os lados (direita e esquerda) */
 }
@@ -211,33 +215,32 @@ body {
 }
 
 .combos-hamburguer {
-    font-family: 'Bungee';
-    color: #F4CE07;
+    background: #4F1212;
+    font-family: 'Staatliches';
+    color: #FFFFFF;
     font-size: 6.5vw; /* Tamanho responsivo */
     line-height: 7.8vw;
     padding: 2vw;
-    text-decoration: underline;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Bungee';
+    font-family: 'Staatliches';
     color: #F4CE07;
     font-size: 6.5vw; /* Tamanho responsivo */
     line-height: 7.8vw;
     padding: 2vw;
-    text-decoration: underline;
     text-align: center;
 }
 
 h4 {
-    font-family: 'Bungee';
-    color: #F4CE07;
+    font-family: 'Staatliches';
+    color: #FFFFFF;
     font-size: 6.5vw; /* Tamanho responsivo */
     line-height: 7.8vw;
     padding: 2vw;
-    text-decoration: underline;
     text-align: center;
+    background-color: #4F1212;
 }
 
 .opcao-acompanhamentos-container {
@@ -245,7 +248,7 @@ h4 {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: auto; /* Ocupa toda a altura da tela */
-    color: #F4CE07;
+    color: #4F1212;
     margin-left: 40px;
 }
 
@@ -341,28 +344,20 @@ p {
 /* Estilos padrão para PCs */
 footer {
     background-color: #4F1212;
-    text-align: left;
+    text-align: center;
     padding: 20px; /* Adicione espaçamento interno igual em todos os lados */
     display: flex; /* Use flexbox para ocupar mais espaço horizontalmente */
     justify-content: space-between; /* Distribua os elementos horizontalmente */
     align-items: center; /* Centralize verticalmente os elementos no rodapé */
-  }
-  
-  footer a {
-    font-family: 'Baloo Thambi 2', cursive;
-    color: #A65020;
-    font-size: 32px;
-    font-family: 'Baloo Thambi 2', cursive;
-    margin: 0 20px; /* Adicione margem horizontal para separar os links */
-    text-decoration: none; /* Remova sublinhado dos links */
-  }
-  
-  .logotipo-hot-steak-miniatura {
-    width: 100%; /* Faça a imagem ocupar 100% da largura do rodapé */
-    max-width: 200px; /* Defina uma largura máxima para a imagem */
-    float: right; /* Flutue a imagem para o canto direito do rodapé */
-    margin-left: 10px; /* Adicione margem à esquerda para separação entre a imagem e os links */
-  }
+}
+
+.logotipo-hot-steak-miniatura {
+    width: 170px;
+    height: 207px;
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+  }  
   
 .opcao-hamburguer5 {
     margin-left: 10px;
@@ -473,16 +468,12 @@ footer {
         padding: 5px; /* Reduza ainda mais o espaçamento interno */
     }
   
-    footer a {
-        font-size: 24px; /* Reduza o tamanho da fonte dos links */
-        margin: 5px 0; /* Adicione um pequeno espaço vertical entre os links */
-    }
-  
     .logotipo-hot-steak-miniatura {
-        float: none; /* Remova a flutuação */
-        margin: 10px auto; /* Centralize a imagem horizontalmente com margem superior e inferior */
-        max-width: 150px; /* Reduza o tamanho máximo da imagem */
-    }
+        width: 170px;
+        height: 207px;
+        display: block;
+        margin: 0 auto;
+      }        
 }
 
 /* Media query para dispositivos com largura de até 600 pixels (exemplo) */

@@ -1,18 +1,15 @@
-body {
+.design-tela-recuperacao-senha {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background: rgba(129, 8, 8, 1);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: top;
-    justify-content: center;
+    background-color: #4F1212;
+    width: 200vh;
+    height: 100vh; /* Adiciona altura de 100% da tela */
 }
 
 .logotipo-hotsteak {
     padding: 40px;
+    margin: 0;
+    text-align: center;
 }
 
 .logotipo-hotsteak-tela-confirmar-senha {
@@ -52,6 +49,7 @@ body {
 }
 
 .voltar-button {
+    font-family: Staatliches;
     background-color: #EEEEEE;
     color: red;
     border: none;
@@ -60,6 +58,7 @@ body {
 }
 
 .avancar-button {
+    font-family: Staatliches;
     background-color: red;
     color: white;
     border: none;
@@ -68,14 +67,20 @@ body {
 
 /* Media query para dispositivos com largura de até 600 pixels (exemplo) */
 @media (max-width: 600px) {
+    .design-tela-recuperacao-senha {
+        width: 100%;
+        height: 100vh;
+    }
+
     .logotipo-hotsteak {
         padding: 15px;
+        width: 90%;
     }
 
     .logotipo-hotsteak img {
-        width: 300px;
-        height: 43px;
-        padding: 40px;
+        width: 60%; /* Reduz o tamanho da logo para 80% da largura da tela */
+        margin-left: 20px;
+        margin-top: 60px;
     }
 
     .placeholder-small {

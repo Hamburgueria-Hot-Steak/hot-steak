@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Thambi+2:wght@500&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
 /* Estilo base para o menu-container */
 .menu-container {
-    background: #411700;
+    background: #4F1212;
     display: flex;
     justify-content: flex-end; /* Alinhe os elementos à direita */
     align-items: center; /* Alinhar verticalmente os elementos no centro */
@@ -25,7 +27,7 @@
 /* Estilo para a versão web dos links */
 .menu-container a {
     padding: 10px;
-    font-family: Bigshot One;
+    font-family: Staatliches;
     text-decoration: none;
     height: 74px;
     display: flex;
@@ -67,7 +69,7 @@
 /* Estilo para a versão web dos links */
 .menu-container a {
     padding: 10px; /* Reduza o espaçamento horizontal e vertical conforme necessário */
-    font-family: Bigshot One;
+    font-family: Staatliches;
     text-decoration: none;
     height: 74px; /* Defina a altura desejada, que corresponde à altura das imagens */
     display: flex; /* Para alinhar o texto verticalmente */
@@ -83,7 +85,7 @@
 /* Estilo padrão para a classe .menu-container */
 .menu-container {
     position: relative;
-    background-color: #411700; /* Defina a cor de fundo desejada para o menu */
+    background-color: #4F1212; /* Defina a cor de fundo desejada para o menu */
     display: flex;
     justify-content: flex-start; /* Alinhar os elementos à esquerda */
     align-items: center;

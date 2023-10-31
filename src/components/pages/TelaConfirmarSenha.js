@@ -55,7 +55,8 @@ function TelaConfirmarSenha() {
   }
 
   return (
-    <div>
+    <div className="design-tela-recuperacao-senha">
+      <div>
       <div className="logotipo-hotsteak-tela-confirmar-senha">
         <Link to="/home">
           <img className="logotipo-hotsteak" src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
@@ -107,6 +108,7 @@ function TelaConfirmarSenha() {
         </Link>
         </div>
       </section>
+    </div>
     </div>
   );
 }

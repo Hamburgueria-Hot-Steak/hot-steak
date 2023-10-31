@@ -27,7 +27,8 @@ function TelaRecuperacaoSenhaCodigo() {
   }
 
   return (
-    <div>
+    <div className="design-tela-recuperacao-senha">
+      <div>
       <div className="logotipo-hotsteak">
         <Link to="/home">
           <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
@@ -49,7 +50,7 @@ function TelaRecuperacaoSenhaCodigo() {
           </p>
         )}
 
-        <div className="botoes-tela-recuperacao-senha">
+        <div>
           <Link to="/TelaRecuperacaoSenha">
             <button className="voltar-button">Voltar</button>
           </Link>
@@ -59,6 +60,7 @@ function TelaRecuperacaoSenhaCodigo() {
           </button>
         </div>
       </section>
+    </div>
     </div>
   );
 }

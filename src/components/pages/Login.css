@@ -1,16 +1,17 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+.design-tela-login {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: rgba(129, 8, 8, 1);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #4F1212;
+  width: 200vh;
+  height: 100vh; /* Adiciona altura de 100% da tela */
 }
 
 .txt-login {
     text-align: center;
     color: #C81B1B;
-    font-family: Arial;
+    font-family: Staatliches;
     font-size: 22px;
 }
 
@@ -25,52 +26,44 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Define a altura da tela inteira */
+    height: auto; /* Define a altura da tela inteira */
   }
   
   form {
     text-align: center; /* Centraliza o conteúdo do formulário horizontalmente */
   }
 
-/* Estilos para o campo de texto preenchido */
-.red-input-filled {
-  width: 50%;
-  margin: 0 auto; /* Adiciona margem automática à esquerda e à direita para centralizar */
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid red;
-  border-radius: 0;
-  outline: none;
-  color: #C81B1B;
-  display: block; /* Certifica-se de que seja exibido como bloco (um abaixo do outro) */
-  margin-bottom: 10px; /* Adiciona um pequeno espaçamento entre os campos */
-}
+  .red-input-filled {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid red; /* Atualiza a cor da borda inferior para #C81B1B */
+    border-radius: 0;
+    outline: none;
+    color: #C81B1B; /* Atualiza a cor da fonte para #C81B1B */
+    display: block;
+    margin-bottom: 10px;
+    font-family: Staatliches;
+  }
 
-/* Estilos para o texto dentro do campo preenchido */
-.red-input-filled::placeholder {
-  color: red; /* Cor do texto de placeholder */
-}
-
-/* Estilos para o campo quando estiver focado (hover) */
-.red-input-filled:focus {
-  border-color: darkred; /* Cor da borda inferior quando o campo está focado */
-}
- 
   /* Estilos adicionais para os elementos do formulário */
   .tf-email, .tf-senha, .btn-entrar {
     display: block; /* Define os rótulos e campos de entrada como elementos de bloco */
     margin-bottom: 10px; /* Espaço entre os elementos */
   }
   
-.btn-entrar {
+  .btn-entrar {
     background-color: #C81B1B;
     width: 120px;
     height: 36px;
     border-radius: 20px;
     font-family: Arial;
     color: white;
-    margin-top: -780px;
+    position: relative; /* Adicione position: relative; */
+    top: 20px; /* Ajuste o valor conforme necessário */
 }
+
 
 .login-container {
   background-color: #ffffff;
@@ -111,6 +104,7 @@ h2 {
 
 .login-button {
   background-color: red;
+  font-family: Staatliches;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -139,7 +133,7 @@ h2 {
 .login-container {
   background-color: white;
   padding: 20px;
-  width: 300px; /* Ajuste a largura conforme necessário */
+  width: 400px; /* Ajuste a largura conforme necessário */
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
@@ -156,6 +150,7 @@ h2 {
   margin: 10px 0; /* Adiciona espaçamento vertical entre os links */
   text-decoration: none;
   color: #662424;
+  font-family: Staatliches;
 }
 
 .form-email {
@@ -168,12 +163,17 @@ h2 {
 
 /* Estilos para telas com largura máxima de 768px */
 @media (max-width: 768px) {
+  .design-tela-login {
+    width: 100%;
+    height: 100vh;
+  }
   .login-container {
-    width: 60vw; /* Reduz a largura do container para 80% da largura da tela */
+    width: 60%; /* Reduz a largura do container para 80% da largura da tela */
+    height: auto;
   }
 
   /* Estilos para telas pequenas (como celulares) */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .red-input-filled {
     width: 70%;
     margin: 5px 0;
