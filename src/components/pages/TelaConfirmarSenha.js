@@ -62,7 +62,7 @@ function TelaConfirmarSenha() {
           <img className="logotipo-hotsteak" src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
       </div>
-      <section className="conteudo-centralizado-confirmar-senha">
+      <section>
         <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
         <p className="txt-inserir-dados">DIGITE SUA NOVA SENHA</p>
         <input
