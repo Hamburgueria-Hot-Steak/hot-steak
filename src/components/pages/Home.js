@@ -39,33 +39,32 @@ const Home = () => {
             alt="2 Hambúrgueres + Batata Frita + Refrigerante"
             title="2 Hambúrgueres + Batata Frita + Refrigerante"
           />
-          <p style={{fontSize: '15px'}}>2 hambúrgueres +</p>
-          <p style={{fontSize: '15px'}}>Batata Frita +</p>
-          <p style={{fontSize: '15px'}}>Refrigerante</p>
+          <p>2 hambúrgueres +</p>
+          <p>Batata Frita + Refrigerante</p>
         </div>
         <div className="combo2">
           <img className="hamburguer2" src="./assets/combo-hamburguer2.jpg" alt="3 Hambúrgueres" />
-          <p style={{ fontSize: '15px' }}>Triple Hotsteak Burguer</p>
+          <p>Triple Hotsteak Burguer</p>
         </div>
 
         <div className="combo3">
           <img className="hamburguer3" src="./assets/combo-hamburguer3.jpg" alt="Hambúrguer e Batata Frita" />
-          <p style={{ fontSize: '15px' }}>Hambúrguer + Batata Frita</p>
+          <p>Hambúrguer + Batata Frita</p>
         </div>
 
         <div className="combo4">
           <img className="hamburguer4" src="./assets/combo-hamburguer4.jpg" alt="Combo Infantil" />
-          <p style={{ fontSize: '15px' }}>Hot Junior + Batata Frita</p>
+          <p>Hot Junior + Batata Frita</p>
         </div>
 
         <div className="combo5">
           <img className="hamburguer5" src="./assets/combo-hamburguer5.jpg" alt="Hambúrguer de frango + Batata Frita" />
-          <p style={{ fontSize: '15px' }}>Hot Costela + Batata Frita</p>
+          <p>Hot Costela + Batata Frita</p>
         </div>
 
         <div className="combo6">
           <img className="hamburguer6" src="./assets/combo-hamburguer6.png" alt="Combo vegano" />
-          <p style={{ fontSize: '15px' }}>Hambúrguer + Batata Frita</p>
+          <p>Hambúrguer + Batata Frita</p>
         </div>
       </div>
     </div>
