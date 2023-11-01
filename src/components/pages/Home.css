@@ -1,5 +1,4 @@
-@import url('https://fonts.google.com/specimen/Bigshot+One?query=bigshot+one');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
 
 .design-tela-home {
@@ -72,7 +71,6 @@
 
 
 .combo1, .combo2, .combo3, .combo4, .combo5, .combo6 {
-    font-family: 'Bowlby One SC', sans-serif;
     font-size: 2.5vw; /* Tamanho responsivo */
     line-height: 2.6vw;
     text-align: center;
@@ -85,12 +83,6 @@
     display: flex;
     flex-wrap: wrap; /* Permite que as divs filhas envolvam para a próxima linha quando não houver espaço suficiente */
     justify-content: space-around; /* Espaço entre as imagens */
-}
-
-.combos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .combo1, .combo2, .combo3, .combo4, .combo5, .combo6 {
@@ -118,10 +110,6 @@
     flex-wrap: wrap;
     gap: 10px; /* Define o espaçamento entre as opções */
     color: #4F1212;
-}
-
-.combo {
-    font-family: 'Bowlby One SC';
 }
 
 .grupo-1,
@@ -323,7 +311,7 @@ h4 {
 }
 
 p {
-    font-family: Bigshot One;
+    font-family: Bowlby One SC;
     font-size: 2.5vw; /* Tamanho responsivo */
     text-align: center;
 }
@@ -338,7 +326,7 @@ p {
     margin-top: 20px;
     text-align: center;
     margin-left: 20px;
-    font-family: 'Bigshot One';
+    font-family: 'Bowlby One SC';
 }
 
 /* Estilos padrão para PCs */
@@ -387,6 +375,7 @@ footer {
 .opcao-acompanhamento1 p,
 .opcao-acompanhamento2 p,
 .opcao-acompanhamento3 p {
+    font-family: 'Bowlby One SC';
     font-size: 16px; /* Defina o tamanho de fonte desejado */
 }
 

@@ -117,15 +117,6 @@
     transition: filter 0.3s; /* Adiciona uma transição suave para a mudança de cor */
 }
 
-.icone-compras:hover {
-    padding: 5px; /* Adiciona um espaço interno ao passar o mouse */
-    background-color: #F17513;
-}
-
-.icone-compras:hover img {
-    filter: brightness(1.5); /* Ajusta o brilho para simular a mudança de cor ao passar o mouse */
-}
-
 /* Estilo para a classe .logo-hot-steak */
 .logo-hot-steak {
     width: 55px; /* Largura da logo */
@@ -140,11 +131,6 @@
     color: #000; /* Define a cor padrão dos links */
     transition: color 0.3s, border-bottom-color 0.3s; /* Adiciona uma transição suave para a cor do texto e a cor da linha inferior */
   }
-  
-  .menu-container a:hover {
-    color: #F17513; /* Define a cor quando o mouse passa sobre o link */
-    border-bottom: -1px solid #F17513; /* Adiciona uma linha inferior com a cor desejada e espessura de 1px */
-  }  
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
