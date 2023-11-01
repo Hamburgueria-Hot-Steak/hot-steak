@@ -1,0 +1,39 @@
+/* Carousel.css */
+.carousel-image {
+  width: 80%; /* Ajuste a largura conforme necessário para as imagens ficarem juntinhas */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 20px; /* Reduzi o padding para deixar as imagens mais próximas */
+  border-radius: 30px; /* Reduzi o raio da borda para evitar espaços em branco entre as imagens */
+}
+
+/* Estilos para as bolinhas (dots) do carrossel */
+.slick-dots {
+  bottom: -25px; /* Ajuste a distância do fundo conforme necessário para dispositivos maiores */
+}
+
+.slick-dots li button:before {
+  color: gray; /* Altere a cor das bolinhas */
+  font-size: 12px; /* Altere o tamanho da fonte das bolinhas */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4F1212; /* Altere a cor das bolinhas quando estiverem ativas */
+}
+
+/* Estilos responsivos para dispositivos menores */
+@media (max-width: 768px) {
+  .carousel-image {
+    width: 90%; /* Ajuste a largura para dispositivos menores */
+    padding: 5px; /* Ajuste o padding para dispositivos menores */
+  }
+
+  .slick-dots {
+    bottom: -10px; /* Ajuste a distância do fundo para dispositivos menores */
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+}

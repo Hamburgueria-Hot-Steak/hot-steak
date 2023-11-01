@@ -464,11 +464,3 @@ footer {
         margin: 0 auto;
       }        
 }
-
-/* Media query para dispositivos com largura de até 600 pixels (exemplo) */
-@media (max-width: 600px) {
-    .promocoes {
-        width: 80%; /* ou qualquer valor desejado para dispositivos móveis */
-        height: auto;
-    }
-}

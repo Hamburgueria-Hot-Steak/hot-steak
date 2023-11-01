@@ -1,17 +1,28 @@
 .loading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-spinner {
+  border: 3px solid #4F1212; /* Cor das bordas da bolinha */
+  border-radius: 50%;
+  border-top: 3px solid pink; /* Cor da parte superior da bolinha */
+  width: 30px; /* Tamanho da bolinha */
+  height: 30px; /* Tamanho da bolinha */
+  animation: spin 1s linear infinite, scale 0.5s ease-in-out infinite alternate; /* Animação de rotação e escala */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  
-  .loading-spinner {
-    border: 4px solid rgba(65, 23, 0, 0.3);
-    border-radius: 50%;
-    border-top: 4px solid #ffffff;
-    width: 50px;
-    height: 50px;
-    animation: spin 10s linear 0.5s;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.2); /* Aumenta o tamanho da bolinha durante a animação */
   }
-  
+}

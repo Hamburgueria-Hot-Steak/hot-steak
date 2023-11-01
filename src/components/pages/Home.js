@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Loading from '../../components/loading/Loading';
+import Carousel from '../../components/carousel/Carousel'
 import '../../components/pages/Home.css';
 
 const Home = () => {
@@ -24,9 +25,7 @@ const Home = () => {
           {/* ... Seu conteúdo da página ... */}
         </>
       )}
-      <div className="promocoes">
-        <img src="./assets/promocao-hamburguer1.png" alt="Promoções" />
-      </div>
+      <Carousel />
       <h2 id="menu" className="combos-hamburguer">
         COMBOS
       </h2>
