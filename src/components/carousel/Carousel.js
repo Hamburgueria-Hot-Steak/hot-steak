@@ -7,13 +7,15 @@ import './Carousel.css';
 const Carousel = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
     centerPadding: '10%',
+    autoplay: true, // Adicione esta linha
+    autoplaySpeed: 3000, // Defina o intervalo desejado em milissegundos
     responsive: [
       {
         breakpoint: 768,
@@ -22,7 +24,7 @@ const Carousel = () => {
         },
       },
     ],
-  };
+  };  
 
   return (
     <Slider {...settings}>
