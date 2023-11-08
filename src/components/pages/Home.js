@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Loading from '../../components/loading/Loading';
+import { Link } from 'react-router-dom';
 import Carousel from '../../components/carousel/Carousel'
 import '../../components/pages/Home.css';
 
@@ -119,8 +120,18 @@ const Home = () => {
           <p>Nuggets de Frango</p>
         </div>
       </div>
-      <footer>
-        <img className="logotipo-hot-steak-miniatura" src="./assets/Logo Hamburgueria Hot Steak Miniatura.png" alt="Logotipo Miniatura Hot Steak" />
+      <footer id="contato">
+        <div className="logo-hot-steak-miniatura">
+          <img className="logotipo-hot-steak-miniatura" src="./assets/Logo Hamburgueria Hot Steak Miniatura.png" alt="Logotipo Miniatura Hot Steak" />
+        </div>
+        <p className="txt-rodape">COMPARTILHE ALGO 
+        <br></br>DELICIOSO</p> 
+        <div>
+        <div className="contatos">
+            <a href="#"><img src="./assets/logo-x.png" alt="Logotipo da Rede Social X (Antigo Twitter)" /></a>
+            <a href="#"><img src="./assets/logo-instagram.png" alt="" /></a>
+         </div>
+        </div>
       </footer>
     </div>
   );
