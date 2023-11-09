@@ -78,29 +78,29 @@ const Home = () => {
 
           <div className="opcao-hamburguer2">
             <img src="./assets/opcao-cheddar-bacon-hamburgueres.png" alt="Cheddar e Bacon" />
-            <h1 style={{ fontSize: '15px' }}>Cheddar e Bacon</h1>
+            <h1 style={{ fontSize: '15px' }}>Hot Cheddar com Bacon</h1>
           </div>
 
           <div className="opcao-hamburguer3">
             <img src="./assets/opcao-hamburguer-mega.webp" alt="Hamburguer Mega" />
-            <h1 style={{ fontSize: '15px' }}>Mega</h1>
+            <h1 style={{ fontSize: '15px' }}>Mega Hot</h1>
           </div>
         </div>
 
         <div className="grupo-2">
           <div className="opcao-hamburguer4">
             <img src="./assets/opcao-hotfrango-hamburgueres.png" alt="Hot Frango" />
-            <h1 style={{ fontSize: '15px' }}>HotFrango</h1>
+            <h1 style={{ fontSize: '15px' }}>Hot Frango</h1>
           </div>
 
           <div className="opcao-hamburguer5">
             <img src="./assets/opcao-black-burguer-hamburgueres.jpg" alt="Black Burguer" />
-            <h1 style={{ fontSize: '15px' }}>Black Burguer</h1>
+            <h1 style={{ fontSize: '15px' }}>Blackhot Burguer</h1>
           </div>
 
           <div className="opcao-hamburguer6">
             <img src="./assets/opcao-x-tudo.jpeg" alt="X-Tudo" />
-            <h1 style={{ fontSize: '15px' }}>X-Tudo</h1>
+            <h1 style={{ fontSize: '15px' }}>Hot-Tudo</h1>
           </div>
         </div>
       </div>
