@@ -29,7 +29,7 @@ function TelaRecuperacaoSenhaCodigo() {
   return (
     <div className="design-tela-recuperacao-senha">
       <div>
-      <div className="logotipo-hotsteak">
+      <div className="logotipo-hotsteak-recuperacao-senha-codigo">
         <Link to="/home">
           <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>

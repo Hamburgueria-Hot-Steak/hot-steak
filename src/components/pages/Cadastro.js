@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 function Cadastro() {
   const [isLoading, setIsLoading] = useState(true);
   const [nome, setNome] = useState('');
+  const [cpf, setCpf] = useState(''); // Adicione o estado para o CPF
   const [endereco, setEndereco] = useState('');
   const [telefone, setTelefone] = useState('');
   const [email, setEmail] = useState('');
@@ -36,7 +37,7 @@ function Cadastro() {
   };
 
   const dadosPreenchidos = () => {
-    return nome && endereco && telefone && email && senha && confirmarSenha;
+    return nome && cpf &&  endereco && telefone && email && senha && confirmarSenha;
   };
 
   const handleCadastrarClick = () => {
@@ -56,6 +57,10 @@ function Cadastro() {
 
   const handleNomeChange = (event) => {
     setNome(event.target.value);
+  };
+
+  const handleCpfChange = (event) => {
+    setCpf(event.target.value);
   };
 
   const handleEnderecoChange = (event) => {
@@ -100,6 +105,14 @@ function Cadastro() {
               className="red-input-filled"
               value={nome}
               onChange={handleNomeChange}
+            />
+
+            <input
+              type="text"
+              placeholder="CPF: "
+              className="red-input-filled"
+              value={cpf}
+              onChange={handleCpfChange}
             />
 
             <input

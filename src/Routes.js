@@ -6,6 +6,7 @@ import Cadastro from './components/pages/Cadastro';
 import TelaRecuperacaoSenha from './components/pages/TelaRecuperacaoSenha';
 import TelaRecuperacaoSenhaCodigo from './components/pages/TelaRecuperacaoSenhaCodigo';
 import TelaConfirmarSenha from './components/pages/TelaConfirmarSenha';
+import TelaSenhaAlterada from './components/pages/TelaSenhaAlterada';
 
 const AppRoutes = () => {
 
@@ -19,6 +20,7 @@ const AppRoutes = () => {
         <Route path="/TelaRecuperacaoSenhaCodigo" element={<TelaRecuperacaoSenhaCodigo />} />
         <Route path="/TelaConfirmarSenha" element={<TelaConfirmarSenha />} />
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/TelaSenhaAlterada" element ={<TelaSenhaAlterada />} />
       </Routes>
     </Router>
   );

@@ -101,7 +101,7 @@ function TelaConfirmarSenha() {
             <button className="voltar-button">Voltar</button>
           </Link>
 
-          <Link to={senha !== '' ? '/Login' : '/TelaConfirmarSenha'}>
+          <Link to={senha !== '' ? '/TelaSenhaAlterada' : '/TelaConfirmarSenha'}>
           <button className="avancar-button" onClick={handleAvancarClick}>
            Confirmar
           </button>
