@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../../components/pages/Login.css';
 import { Link } from 'react-router-dom';
 import Loading from '../../components/loading/Loading';
+import request from '../../api/request';
+
+// const request = require('../../api/request');
 
 const Login = () => {
   const [email, setEmail] = useState('');
