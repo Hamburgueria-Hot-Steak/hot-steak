@@ -8,19 +8,39 @@ import TelaRecuperacaoSenhaCodigo from './components/pages/TelaRecuperacaoSenhaC
 import TelaConfirmarSenha from './components/pages/TelaConfirmarSenha';
 import TelaSenhaAlterada from './components/pages/TelaSenhaAlterada';
 
-const AppRoutes = () => {
+// Função de exemplo para verificar a autenticação
+const isAuthenticated = () => {
+  // Lógica para verificar se o usuário está autenticado
+  // Retorna true se autenticado, false caso contrário
+  // Aqui você pode usar o estado do seu aplicativo ou qualquer lógica de autenticação necessária
+  return true; // Altere isso com sua lógica real
+};
 
+// ...
+
+// Componente de rota privada
+const PrivateRoute = ({ element, ...props }) => {
+  if (!isAuthenticated()) {
+    // Se não estiver autenticado, redirecione para a página de login
+    return <Navigate to="/login" />;
+  }
+
+  // Se estiver autenticado, renderize o componente da rota
+  return <Route {...props} element={element} />;
+};
+
+const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/Home" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/TelaRecuperacaoSenha" element={<TelaRecuperacaoSenha />} />
         <Route path="/TelaRecuperacaoSenhaCodigo" element={<TelaRecuperacaoSenhaCodigo />} />
         <Route path="/TelaConfirmarSenha" element={<TelaConfirmarSenha />} />
         <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/TelaSenhaAlterada" element ={<TelaSenhaAlterada />} />
+        <Route path="/TelaSenhaAlterada" element={<TelaSenhaAlterada />} />
       </Routes>
     </Router>
   );
