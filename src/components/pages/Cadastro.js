@@ -2,8 +2,52 @@ import React, { useState, useEffect } from 'react';
 import Loading from '../../components/loading/Loading';
 import '../../components/pages/Cadastro.css';
 import { Link } from 'react-router-dom';
+import { request } from '../../api/request'; // Verifique o caminho correto
 
 function Cadastro() {
+
+  const handleCadastrarClick = () => {
+    if (!dadosPreenchidos()) {
+      setAvisoPreenchimento(true);
+    } else {
+      // Verifica se o email já está cadastrado
+      const isEmailTaken = users.some((user) => user.email === email);
+
+      if (isEmailTaken) {
+        alert('Este email já está cadastrado. Tente outro.');
+      } else {
+        // Adiciona o novo usuário à lista
+        const novoUsuario = {
+          nome,
+          cpf,
+          endereco,
+          telefone,
+          email,
+          senha,
+        };
+
+        setUsers((prevUsers) => [...prevUsers, novoUsuario]);
+
+        // Limpa os campos após o cadastro bem-sucedido
+        setNome('');
+        setCpf('');
+        setEndereco('');
+        setTelefone('');
+        setEmail('');
+        setSenha('');
+        setConfirmarSenha('');
+        setSenhaAviso('');
+        setSenhaTocada(false);
+        setAvisoPreenchimento(false);
+
+        // Exibe uma mensagem de sucesso
+        alert('Cadastro realizado com sucesso!');
+
+        // Redirecionamento para a página de login
+        window.location.href = "/login";
+      }
+    }
+  };
   const [isLoading, setIsLoading] = useState(true);
   const [nome, setNome] = useState('');
   const [cpf, setCpf] = useState(''); // Adicione o estado para o CPF
@@ -15,7 +59,22 @@ function Cadastro() {
   const [senhaAviso, setSenhaAviso] = useState('');
   const [senhaTocada, setSenhaTocada] = useState(false); // Novo estado para verificar se a senha foi tocada
   const [avisoPreenchimento, setAvisoPreenchimento] = useState(false);
+  const [users, setUsers] = useState([]); // Adicionando o estado para armazenar os usuários
 
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const userData = await request.getUsers();
+        setUsers(userData);
+      } catch (error) {
+        console.error(error.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchUsers();
+  }, []);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -38,17 +97,6 @@ function Cadastro() {
 
   const dadosPreenchidos = () => {
     return nome && cpf &&  endereco && telefone && email && senha && confirmarSenha;
-  };
-
-  const handleCadastrarClick = () => {
-    if (!dadosPreenchidos()) {
-      setAvisoPreenchimento(true);
-    } else {
-      // Lógica para cadastro bem-sucedido
-      alert('Cadastro realizado com sucesso!');
-      // Redirecionamento para a página de login
-      window.location.href = "/login";
-    }
   };
 
   const handleEmailChange = (event) => {
