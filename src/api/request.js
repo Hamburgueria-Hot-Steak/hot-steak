@@ -1,19 +1,28 @@
-// Acessar a lista de usuários que fizeram login: http://localhost:3001/users
+// Acessar a lista de usuários cadastrados: localhost:3001/users
 
-export const request = async () => {
+export const request = {
+  getUsers: async () => {
     try {
-      const res = await fetch('http://localhost:3000/required-certificate/', {
+      const res = await fetch('http://localhost:3001/users', {
         method: 'GET',
         headers: {
-          'Content-Type': 'application/json', // Corrigido: 'application/json' deve ser uma string
+          'Content-Type': 'application/json',
         },
       });
+      
       if (!res.ok) {
-        throw new Error('Usuário não encontrado!'); 
+        if (res.status === 404) {
+          // Usuário não encontrado
+          throw new Error('Usuários não encontrados!');
+        } else {
+          // Outro erro de resposta
+          throw new Error('Erro ao obter a lista de usuários.');
+        }
       }
+
       return await res.json();
     } catch (error) {
-      throw new Error('Usuário encontrado!');
+      throw new Error('Erro ao obter a lista de usuários.');
     }
-  };
-  
+  },
+}
