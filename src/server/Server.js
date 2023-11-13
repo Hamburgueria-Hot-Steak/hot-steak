@@ -1,3 +1,5 @@
+// Antes de executar o caminho configurado no arquivo request.js, execute o servidor backend da aplicação: node src/server/Server.js
+
 const express = require('express');
 const { users, User } = require('../server/User');
 
