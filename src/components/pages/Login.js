@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../../components/pages/Login.css';
 import { Link } from 'react-router-dom';
 import Loading from '../../components/loading/Loading';
-import request from '../../api/request';
-
-// const request = require('../../api/request');
+import { request } from '../../api/request'; // Verifique o caminho correto
+import '../../components/pages/Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -15,41 +13,48 @@ const Login = () => {
   const loginButtonRef = useRef(null);
   const forgotPasswordLinkRef = useRef(null);
   const createAccountLinkRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [users, setUsers] = useState([]); // Adicionando o estado para armazenar os usuários
 
-  const handleLoginClick = () => {
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const userData = await request.getUsers();
+        setUsers(userData);
+      } catch (error) {
+        console.error(error.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  const handleLoginClick = async () => {
     if (email === '' || password === '') {
       setShowWarning(true);
       alert('Preencha os campos!');
     } else {
       setShowWarning(false);
-      alert('Login realizado com sucesso!');
-    }
-  };
-
-  const handleTabKeyPress = (e) => {
-    if (e.key === 'Tab') {
-      e.preventDefault();
-      if (document.activeElement === emailInputRef.current) {
-        passwordInputRef.current.focus();
-      } else if (document.activeElement === passwordInputRef.current) {
-        loginButtonRef.current.focus();
-      } else if (document.activeElement === loginButtonRef.current) {
-        forgotPasswordLinkRef.current.focus();
-      } else if (document.activeElement === forgotPasswordLinkRef.current) {
-        createAccountLinkRef.current.focus();
-      } else if (document.activeElement === createAccountLinkRef.current) {
-        emailInputRef.current.focus();
+  
+      // Lógica para lidar com o login
+      const userFound = users.find((user) => user.email === email && user.password === password);
+  
+      if (userFound) {
+        // Login bem-sucedido
+        alert('Login realizado com sucesso!');
+      } else {
+        // Login falhou
+        alert('Login ou senha incorretos. Tente novamente.');
       }
     }
   };
+  
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
+  const handleTabKeyPress = (e) => {
+    // Lógica de tabulação
+  };
 
   return (
     <div className="design-tela-login">
@@ -74,7 +79,7 @@ const Login = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   ref={emailInputRef}
                   onKeyDown={handleTabKeyPress}
-                  tabIndex="1" // Ordem de tabulação
+                  tabIndex="1"
                 />
                 <input
                   type="password"
@@ -85,16 +90,15 @@ const Login = () => {
                   maxLength="8"
                   ref={passwordInputRef}
                   onKeyDown={handleTabKeyPress}
-                  tabIndex="2" // Ordem de tabulação
+                  tabIndex="2"
                 />
               </div>
-  
               <button
                 className="login-button"
                 onClick={handleLoginClick}
                 ref={loginButtonRef}
                 onKeyDown={handleTabKeyPress}
-                tabIndex="3" // Ordem de tabulação
+                tabIndex="3"
               >
                 Logar
               </button>
@@ -104,18 +108,17 @@ const Login = () => {
                     href=""
                     ref={forgotPasswordLinkRef}
                     onKeyDown={handleTabKeyPress}
-                    tabIndex="4" // Ordem de tabulação
+                    tabIndex="4"
                   >
                     Esqueci minha senha
                   </a>
                 </Link>
-  
                 <Link to="/Cadastro">
                   <a
                     href=""
                     ref={createAccountLinkRef}
                     onKeyDown={handleTabKeyPress}
-                    tabIndex="5" // Ordem de tabulação
+                    tabIndex="5"
                   >
                     Criar nova conta
                   </a>
@@ -127,6 +130,6 @@ const Login = () => {
       )}
     </div>
   );
-}
+};
 
 export default Login;
