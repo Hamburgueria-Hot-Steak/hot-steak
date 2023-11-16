@@ -7,7 +7,11 @@ import TelaRecuperacaoSenha from './components/pages/TelaRecuperacaoSenha';
 import TelaRecuperacaoSenhaCodigo from './components/pages/TelaRecuperacaoSenhaCodigo';
 import TelaConfirmarSenha from './components/pages/TelaConfirmarSenha';
 import TelaSenhaAlterada from './components/pages/TelaSenhaAlterada';
-
+import TelaPagamento from './components/pages/TelaPagamento';
+import OpcaoPixPagamento from './components/pages/OpcaoPixPagamento';
+import OpcaoCartaoDebitoCredito from './components/pages/OpcaoCartaoDebitoCredito';
+import OpcaoDinheiro from './components/pages/OpcaoDinheiro';
+import TelaRastreio from './components/pages/TelaRastreio';
 // Função de exemplo para verificar a autenticação
 const isAuthenticated = () => {
   // Lógica para verificar se o usuário está autenticado
@@ -41,6 +45,11 @@ const AppRoutes = () => {
         <Route path="/TelaConfirmarSenha" element={<TelaConfirmarSenha />} />
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/TelaSenhaAlterada" element={<TelaSenhaAlterada />} />
+        <Route path="/TelaPagamento" element={<TelaPagamento />} />
+        <Route path="/OpcaoPixPagamento" element={<OpcaoPixPagamento />} />
+        <Route path="/OpcaoCartaoDebitoCredito" element={<OpcaoCartaoDebitoCredito />} />
+        <Route path="/OpcaoDinheiro" element={<OpcaoDinheiro />} />
+        <Route path="/TelaRastreio" element={<TelaRastreio />} />
       </Routes>
     </Router>
   );

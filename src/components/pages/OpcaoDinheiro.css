@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+/* Estilos padrão */
+.design-tela-opcao-dinheiro {
+    margin: 0;
+    padding: 0;
+    background-color: #4F1212;
+    width: 100%; /* Largura ocupando 100% da largura da tela */
+    height: 100vh; /* Altura de 100% da tela */
+}
+
+.txt-quantia-dinheiro {
+    font-family: "Staatliches";
+    color: #C81B1B;
+}
+
+.section-opcao-dinheiro {
+    margin-top: 140px; /* Ajuste conforme necessário para o espaçamento superior */
+    margin-bottom: 20px; /* Ajuste conforme necessário para o espaçamento inferior */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Adicionando media queries para tamanhos de tela menores */
+@media only screen and (max-width: 768px) {
+    .section-opcao-dinheiro {
+        margin-top: 80px; /* Ajuste conforme necessário para telas menores */
+    }
+}
