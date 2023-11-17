@@ -31,7 +31,7 @@ function TelaRecuperacaoSenha() {
         <p className="txt-inserir-dados">INSIRA O EMAIL OU TELEFONE VINCULADO À SUA CONTA</p>
         <input
           type="text"
-          className="red-input-filled placeholder-small"
+          className="red-input-filled red-input"
           value={codigo}
           onChange={(e) => setCodigo(e.target.value)}
         />
