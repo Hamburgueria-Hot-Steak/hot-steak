@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../components/loading/Loading';
-import { request } from '../../api/request'; // Verifique o caminho correto
+import { request } from '../../api/request';
 import '../../components/pages/Login.css';
 
 const Login = () => {
@@ -14,7 +14,8 @@ const Login = () => {
   const forgotPasswordLinkRef = useRef(null);
   const createAccountLinkRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [users, setUsers] = useState([]); // Adicionando o estado para armazenar os usuários
+  const [users, setUsers] = useState([]);
+  const navigate = useNavigate(); // Utilize useNavigate para obter a função de navegação
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -38,19 +39,22 @@ const Login = () => {
     } else {
       setShowWarning(false);
   
-      // Lógica para lidar com o login
       const userFound = users.find((user) => user.email === email && user.password === password);
   
-      if (userFound) {
-        // Login bem-sucedido
-        alert('Login realizado com sucesso!');
+      if (!userFound) {
+        if (email === 'admin' && password === '1234') {
+          // Redirecionar para o PainelAdmin
+          alert('Login realizado com sucesso como administrador!');
+          navigate('/PainelAdmin'); 
+        } else {
+          // Redirecionar para outra página
+          alert('Login realizado com sucesso!');
+        }
       } else {
-        // Login falhou
-        alert('Login ou senha incorretos. Tente novamente.');
+        alert('Login e/ou senha incorretas. Tente novamente.');
       }
     }
-  };
-  
+  };  
 
   const handleTabKeyPress = (e) => {
     // Lógica de tabulação
