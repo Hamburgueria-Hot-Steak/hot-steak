@@ -12,6 +12,8 @@ import OpcaoPixPagamento from './components/pages/OpcaoPixPagamento';
 import OpcaoCartaoDebitoCredito from './components/pages/OpcaoCartaoDebitoCredito';
 import OpcaoDinheiro from './components/pages/OpcaoDinheiro';
 import TelaRastreio from './components/pages/TelaRastreio';
+import PainelAdmin from './components/pages/PainelAdmin';
+
 // Função de exemplo para verificar a autenticação
 const isAuthenticated = () => {
   // Lógica para verificar se o usuário está autenticado
@@ -50,6 +52,7 @@ const AppRoutes = () => {
         <Route path="/OpcaoCartaoDebitoCredito" element={<OpcaoCartaoDebitoCredito />} />
         <Route path="/OpcaoDinheiro" element={<OpcaoDinheiro />} />
         <Route path="/TelaRastreio" element={<TelaRastreio />} />
+        <Route path="/PainelAdmin" element={<PainelAdmin />} />
       </Routes>
     </Router>
   );
