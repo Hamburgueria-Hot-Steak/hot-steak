@@ -67,7 +67,7 @@ function TelaConfirmarSenha() {
         <p className="txt-inserir-dados">DIGITE SUA NOVA SENHA</p>
         <input
           type="password"
-          className="red-input-filled placeholder-small"
+          className="red-input-filled red-input"
           value={senha}
           maxLength={8}
           onChange={(e) => {
@@ -78,7 +78,7 @@ function TelaConfirmarSenha() {
         <p className="txt-inserir-dados">CONFIRME SUA SENHA</p>
         <input
           type="password"
-          className="red-input-filled placeholder-small"
+          className="red-input-filled red-input"
           value={confirmarSenha}
           onChange={(e) => setConfirmarSenha(e.target.value)}
           maxLength={8}
