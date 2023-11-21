@@ -29,7 +29,7 @@ Estamos determinados a projetar uma página web que se destaque não apenas pela
 **Express.js** Um servidor backend para realizar autenticação de dois fatores (2FA) na tela de login.
 <br>
 <br>
-**PostgreSQL:** Banco de Dados que será utilizado para armazenamento de dados e informações dos clientes da Hot Steak.
+**PhpMyAdmin:** Banco de Dados que será utilizado para armazenamento de dados e informações dos clientes da Hot Steak.
 <br>
 <br>
 **Scrum:** Metodologia ágil para um desenvolvimento mais eficaz, utilizando a ferramenta Trello.
