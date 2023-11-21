@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/pages/Home';
-
 import Delivery from './components/pages/Delivery';
 import Cadastro from './components/pages/Cadastro';
 
