@@ -4,9 +4,9 @@ import './Navbar.css';
 const Navbar = () => {
     return (
       <nav className="menu-container" style={{justifyContent: "center" }}>
-          <a href="./Home">Comandas</a>
-          <a href="#">Produção</a>
-          <a href="#">Entregas</a>
+          <a href="./PainelAdminComandas">Comandas</a>
+          <a href="./PainelAdminProducao">Produção</a>
+          <a href="./PainelAdminEntregas">Entregas</a>
           <a href="/Login">Sair</a>
       </nav>
     );

@@ -22,10 +22,14 @@ body {
     margin-top: 30px;
 }
 
-.txt-painel-administrador {
+.txt-comandas {
   font-family: "Staatliches";
   color: #4F1212;
   text-align: center;
+}
+
+.link-no-underline {
+  text-decoration: none;
 }
   
 /* Estilos para a container principal */

@@ -45,7 +45,7 @@ const Login = () => {
         if (email === 'admin' && password === '1234') {
           // Redirecionar para o PainelAdmin
           alert('Login realizado com sucesso como administrador!');
-          navigate('/PainelAdmin'); 
+          navigate('/PainelAdminComandas'); 
         } else {
           // Redirecionar para outra página
           alert('Login realizado com sucesso!');
