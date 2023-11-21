@@ -12,7 +12,9 @@ import OpcaoPixPagamento from './components/pages/OpcaoPixPagamento';
 import OpcaoCartaoDebitoCredito from './components/pages/OpcaoCartaoDebitoCredito';
 import OpcaoDinheiro from './components/pages/OpcaoDinheiro';
 import TelaRastreio from './components/pages/TelaRastreio';
-import PainelAdmin from './components/pages/PainelAdmin';
+import PainelAdminComandas from './components/pages/PainelAdminComandas';
+import PainelAdminEntregas from './components/pages/PainelAdminEntregas';
+import PainelAdminProducao from './components/pages/PainelAdminProducao';
 
 // Função de exemplo para verificar a autenticação
 const isAuthenticated = () => {
@@ -52,7 +54,9 @@ const AppRoutes = () => {
         <Route path="/OpcaoCartaoDebitoCredito" element={<OpcaoCartaoDebitoCredito />} />
         <Route path="/OpcaoDinheiro" element={<OpcaoDinheiro />} />
         <Route path="/TelaRastreio" element={<TelaRastreio />} />
-        <Route path="/PainelAdmin" element={<PainelAdmin />} />
+        <Route path="/PainelAdminComandas" element={<PainelAdminComandas />} />
+        <Route path="/PainelAdminEntregas" element={<PainelAdminEntregas />} />
+        <Route path="/PainelAdminProducao" element={<PainelAdminProducao />} />
       </Routes>
     </Router>
   );
