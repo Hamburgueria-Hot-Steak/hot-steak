@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list{
+    list-style: none;
+    
+}
+
+.imgFooter{
+    width: 6%;
+}
+
+.itemList{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.itemList > a{
+    color: black;
+}
+
+.itemList > a > p{
+    font: 700 1.2rem 'Montserrat', sans-serif;
+    color: white;
+}
+
+.icons{
+    font-size: 2.2rem;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+}
+
+.divContact{
+    text-align: center;
+}
+
+.divContact > h4{
+    font: 700 1.5rem 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.navFooter > ul{
+    list-style: none;
+}
+
+.navFooter > ul > li{
+    text-align: initial;
+    color: white;
+    font: 700 0.9rem 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.navFooter > ul > li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navFooter > ul > li > a{
+    color: white;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    background-color: #4F1212;
+}
+
+@media (max-width: 1024px){
+    .footer{
+        padding: 1rem; 
+        
+    }
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        padding: 1rem;
+    }
+
+    html{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imageBackgroundDiv{
+    
+    background-image: url("../../../public/assets/promo2blur.png");
+    /* filter: blur(8px);
+    -webkit-filter: blur(5px); */
+    background-color: rgb(230, 211, 211);
+    height: 92.3vh;
+    background-position:bottom; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tpw{
+    text-align: center;
+    color: #ffffff;
+}
+

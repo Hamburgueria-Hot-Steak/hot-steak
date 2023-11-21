@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+.txt-producao {
+    font-family: "Staatliches";
+    color: #4F1212;
+    text-align: center;
+}
+
+.section-producao {
+    background-color: #D1750A;
+}
+
+.icone-mais {
+    width: 50px;
+    height: auto;
+}
+
+/* Adicione regras de mídia para ajustar o layout em telas de celular */
+@media only screen and (max-width: 600px) {
+    .icone-mais {
+        width: 30px; /* Ajuste conforme necessário para telas menores, como celulares */
+    }
+}

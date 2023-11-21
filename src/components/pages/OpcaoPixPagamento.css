@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+.design-tela-opcao-pix-pagamento {
+    margin: 0;
+    padding: 0;
+    padding-top: 02vh;
+    background-color: #4F1212;
+    width: 100%; /* Largura ocupando 100% da largura da tela */
+    height: 100vh; /* Altura de 100% da tela */
+}
+
+.txt-inserir-pix {
+    font-family: "Staatliches";
+    color: #C81B1B;
+}
+
+.btn-avancar {
+    background-color: red;
+    color: white;
+    font-family: Staatliches;
+    border: none;
+    padding: 10px 16px; /* Ajustei o padding para manter o tamanho dos botões iguais */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.section-opcao-pix {
+    margin-top: 140px; /* Ajuste conforme necessário para o espaçamento superior */
+    margin-bottom: 20px; /* Ajuste conforme necessário para o espaçamento inferior */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos padrão */
+.red-input-filled {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Adicionando media queries para tamanhos de tela menores */
+@media only screen and (max-width: 768px) {
+    .section-opcao-pix {
+        margin-top: 140px; /* Ajuste conforme necessário para telas menores */
+        width: 300px;
+    }
+
+    .red-input-filled {
+        width: 100%; /* Ajuste a largura conforme necessário para telas menores */
+    }
+}

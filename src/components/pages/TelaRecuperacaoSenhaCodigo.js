@@ -29,7 +29,7 @@ function TelaRecuperacaoSenhaCodigo() {
   return (
     <div className="design-tela-recuperacao-senha">
       <div>
-      <div className="logotipo-hotsteak">
+      <div className="logotipo-hotsteak-recuperacao-senha-codigo">
         <Link to="/home">
           <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
@@ -39,7 +39,7 @@ function TelaRecuperacaoSenhaCodigo() {
         <p className="txt-inserir-dados">DIGITE O SEU CÓDIGO DE RECUPERAÇÃO</p>
         <input
           type="text"
-          className="red-input-filled placeholder-small"
+          className="red-input-filled red-input"
           value={codigo}
           onChange={(e) => setCodigo(e.target.value)}
         />

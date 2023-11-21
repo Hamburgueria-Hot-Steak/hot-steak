@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font: 600 9rem 'Staatliches', sans-serif;
+}
+
+
+.secWelcomeTitle{
+    font: 600 5.5rem 'Staatliches', sans-serif;
+    color: #4F1212;
+    line-height: 15vh;
+}
+
+.pWelcome{
+    font: 700 1.7rem 'Montserrat', sans-serif;
+    text-align: justify;
+    color: black;
+}
+
+.sectionWelcome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem 4rem;
+    padding: 7% 1%;
+    align-items: center;
+    height: 75vh; 
+    text-align: center;
+}
+
+.secDeliveryTitle{
+    font: 600 5.5rem 'Staatliches', sans-serif;
+    color: white;
+    grid-area: a;
+    line-height: 15vh;
+}
+
+.pDelivery{
+    font: 700 1.7rem 'Montserrat', sans-serif;
+    text-align: justify;
+    grid-area: b;
+    color: white;
+}
+
+.sectionDelivery{
+    background-color:#A45C5C;
+    height: 75vh;
+}
+
+.secDeliveryDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0em 4rem;
+    padding: 7% 1%;
+    align-items: center;
+    grid-template-areas: 
+    "a b"
+    "a c"
+    ;
+    text-align: center;
+    gap: 2rem;
+}
+
+.buttonAboutDelivery{
+    padding: 3%;
+    border-radius: 3rem;
+    background-color:#4F1212;
+    color: white;
+    font: 600 1.3rem 'Montserrat', sans-serif;
+    border: solid 1px black;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.562);
+    transition: background-color 0.5s, border-color 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.buttonAboutDelivery:hover{
+    cursor: pointer;
+    background-color: #97B9CF;
+    border-color: #97B9CF;
+}
+
+.SectionAboutProducts{
+    margin: 5% 0%;
+    height: 70vh;
+}
+
+.aboutProductsContainer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.aboutProductsTitle{
+    font-size: 5rem;
+    line-height: 1vh;
+    color: #4F1212;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.aboutItens > p{
+    font: 700 1.5rem 'Montserrat', sans-serif;;
+    text-align: justify;
+    width: 31.25rem;
+    color: black;
+}
+
+.aboutItens{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icons{
+    font-size: 3.5rem;
+    color:  #97B9CF;
+}
+
+@media (max-width: 1368px){
+    html{
+        font-size: 13px;
+    }
+
+    .aboutProductsContainer{
+        gap: 0.5rem;
+    }
+
+    .buttonAboutDelivery{
+        font-size: 1.4rem;
+        
+    }
+    
+}

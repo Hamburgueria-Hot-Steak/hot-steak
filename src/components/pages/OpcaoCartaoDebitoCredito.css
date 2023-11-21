@@ -1,0 +1,8 @@
+.design-tela-opcao-cartao-debito-credito {
+    margin: 0;
+    padding: 0;
+    padding-top: 02vh;
+    background-color: #4F1212;
+    width: 100%; /* Largura ocupando 100% da largura da tela */
+    height: 100vh; /* Altura de 100% da tela */
+}

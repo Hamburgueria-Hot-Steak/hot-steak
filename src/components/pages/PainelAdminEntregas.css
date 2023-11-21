@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+.txt-entregas {
+    font-family: "Staatliches";
+    color: #4F1212;
+    text-align: center;
+}
+
+.section-entregas {
+    background-color: #3FA70F;
+}
+
+.section-entregas-pendentes {
+    background-color: #727272;
+}
+
+.icone-confirmar {
+    width: 50px;
+    height: auto;
+}
+
+/* Adicione regras de mídia para ajustar o layout em telas de celular */
+@media only screen and (max-width: 600px) {
+    .icone-confirmar {
+        width: 30px; /* Ajuste conforme necessário para telas menores, como celulares */
+    }
+}

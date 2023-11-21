@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
+
+/* Estilos padrão para telas grandes */
+.design-tela-pagamento {
+    margin: 0;
+    padding: 0;
+    background-color: #4F1212;
+    width: 200vh;
+    height: 100vh; /* Adiciona altura de 100% da tela */
+}
+
+.txt-escolha-pagamento {
+    color: #C81B1B;
+    font-family: "Staatliches";
+}
+
+.opcao-pix {
+    font-family: "Staatliches";
+}
+
+.design-tela-pagamento {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo do contêiner (canto superior esquerdo) */
+}
+
+.section-pagamento {
+    margin-top: 100px; /* Ajuste conforme necessário para mover a section para baixo */
+}
+
+.img-pix,
+.img-debito-credito,
+.img-dinheiro {
+    max-width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.logo-container {
+    text-align: center; /* Centralize a logo horizontalmente */
+    padding: 20px 0; /* Adicione espaço superior e inferior */
+}
+
+/* Adicionando media queries para tamanhos de tela menores */
+
+@media only screen and (max-width: 768px) {
+    .design-tela-pagamento {
+        width: 100%; /* Define a largura para 100% em telas menores */
+        height: 100vh; /* Ajusta a altura automaticamente */
+    }
+
+    .logo-container img {
+        width: 100%; /* Faz a imagem ocupar toda a largura do contêiner em telas menores */
+    }
+
+    .section-pagamento {
+        width: 300px;
+    }
+}

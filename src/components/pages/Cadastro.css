@@ -15,7 +15,7 @@
     padding: 10px;
 }
 
-section {
+.section-cadastro {
     background-color: #ffffff;
     padding: 20px;
     width: 90%; /* Alterado para largura relativa em vez de fixa */

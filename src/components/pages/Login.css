@@ -34,7 +34,7 @@
   }
 
   .red-input-filled {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     border: none;
@@ -175,7 +175,7 @@ h2 {
   /* Estilos para telas pequenas (como celulares) */
 @media only screen and (max-width: 768px) {
   .red-input-filled {
-    width: 70%;
+    width: 100%;
     margin: 5px 0;
   }
   

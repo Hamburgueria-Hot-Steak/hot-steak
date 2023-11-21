@@ -27,7 +27,7 @@
 /* Estilo para a versão web dos links */
 .menu-container a {
     padding: 10px;
-    font-family: Staatliches;
+    font: 500 1.5rem 'Staatliches', sans-serif;
     text-decoration: none;
     height: 74px;
     display: flex;
@@ -102,19 +102,6 @@
     color: white; /* Cor do texto dos links */
     text-decoration: none; /* Remova a decoração de texto */
     margin-right: 20px; /* Adicione espaçamento entre os links */
-}
-
-.icone-compras {
-    width: 30px; /* Ajuste o valor conforme necessário */
-    height: 30px; /* Ajuste o valor conforme necessário */
-    overflow: hidden; /* Garante que o overflow seja cortado se a imagem for maior */
-    transition: padding 0.3s; /* Adiciona uma transição suave para a alteração do padding */
-}
-
-.icone-compras img {
-    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível no contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: filter 0.3s; /* Adiciona uma transição suave para a mudança de cor */
 }
 
 /* Estilo para a classe .logo-hot-steak */

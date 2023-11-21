@@ -21,18 +21,17 @@ function TelaRecuperacaoSenha() {
 
   return (
     <div className="design-tela-recuperacao-senha">
-      <div>
-          <div className="logotipo-hotsteak">
-      <Link to="/home">
-        <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
-      </Link>
-    </div>
+      <div className="logotipo-hotsteak-recuperacao-senha">
+        <Link to="/home">
+          <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
+        </Link>
+      </div>
       <section>
         <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
         <p className="txt-inserir-dados">INSIRA O EMAIL OU TELEFONE VINCULADO À SUA CONTA</p>
         <input
           type="text"
-          className="red-input-filled placeholder-small"
+          className="red-input-filled red-input"
           value={codigo}
           onChange={(e) => setCodigo(e.target.value)}
         />
@@ -55,7 +54,6 @@ function TelaRecuperacaoSenha() {
           </Link>
         </div>
       </section>
-    </div>
     </div>
   );
 }

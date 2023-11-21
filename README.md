@@ -26,7 +26,13 @@ Estamos determinados a projetar uma página web que se destaque não apenas pela
 **Git/Github:** Para um controle de versão sólido e colaboração em equipe.
 <br>
 <br>
-**Scrum:** Metodologia ágil para um desenvolvimento mais eficaz.
+**Express.js** Um servidor backend para realizar autenticação de dois fatores (2FA) na tela de login.
+<br>
+<br>
+**PhpMyAdmin:** Banco de Dados que será utilizado para armazenamento de dados e informações dos clientes da Hot Steak.
+<br>
+<br>
+**Scrum:** Metodologia ágil para um desenvolvimento mais eficaz, utilizando a ferramenta Trello.
 <br>
 <br>
 **Vercel:** Plataforma de hospedagem confiável para garantir que nossa página esteja sempre acessível.</p>
@@ -35,7 +41,7 @@ Estamos determinados a projetar uma página web que se destaque não apenas pela
 <p align="center"><b>👥 Integrantes da Equipe</b>
 <br>
   <br>
-<b>👩‍💻Desenvolvedora Frontend/Tech Lead:</b> Maria de Fátima
+<b>👩‍💻Desenvolvedora Full-Stack/Gerente de Projetos:</b> Maria de Fátima
 <br>
 <br>
 <b>🎨 Design:</b> Ana Laura Acioly, Ivanildo Marques e João Pedro Moura

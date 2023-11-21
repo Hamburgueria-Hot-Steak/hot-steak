@@ -12,11 +12,43 @@
     text-align: center;
 }
 
+.logotipo-hotsteak-recuperacao-senha-codigo {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 5px;
+}
+
+.txt-senha-alterada {
+    font-family: "Staatliches";
+    color: #C81B1B;
+}
+
 .logotipo-hotsteak-tela-confirmar-senha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh; /* Isso garante que a div ocupe toda a altura da tela */
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 5px;
+}
+
+.logotipo-hotsteak-recuperacao-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 60px;
+}
+
+.logotipo-hotsteak-tela-recuperacao-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
 }
 
 .logotipo-hotsteak img {
@@ -35,6 +67,7 @@
     font-family: 'Staatliches';
     color: #C81B1B;
     font-size: 20px;
+    text-align: center;
 }
 
 .avancar-button {
@@ -65,11 +98,58 @@
     margin-left: 20px;
 }
 
-/* Media query para dispositivos com largura de até 600 pixels (exemplo) */
+/* Ajustes para tornar o design mais responsivo */
 @media (max-width: 600px) {
-    .design-tela-recuperacao-senha {
+    .design-tela-recuperacao-senha, .design-tela-senha-alterada {
         width: 100%;
-        height: 100vh;
+        height: 100vh; /* Altura ocupando 100% da viewport */
+        background-size: cover; /* Melhor cobertura da imagem de fundo */
+        }
+    }
+
+    .logotipo-hotsteak-recuperacao-senha-codigo {
+        text-align: center;
+        width: 90%;
+        padding: 20px;
+        margin-left: 60px;
+    }
+    
+    /* Adapte para telas menores, como celulares */
+    @media (max-width: 600px) {
+        .logotipo-hotsteak-recuperacao-senha-codigo {
+            width: 90%;
+            margin-left: 0;
+        }
+    }
+    
+
+    .logotipo-hotsteak-recuperacao-senha {
+        text-align: center;
+        width: 90%;
+        padding: 20px;
+        margin-left: 60px;
+    }
+    
+    /* Adapte para telas menores */
+    @media (max-width: 600px) {
+        .logotipo-hotsteak-recuperacao-senha {
+            width: 90%;
+            height: auto;
+            margin-left: 0;
+        }
+    }
+
+/* Adaptações para dispositivos móveis, por exemplo, smartphones */
+@media screen and (max-width: 500px) {
+    .red-input {
+      width: 50%; /* Ajusta a largura do campo de entrada para 60% da largura disponível */
+      font-size: 14px; /* Ajusta o tamanho do texto para 14 pixels */
+      margin-left: 50px; /* Desloca o campo de texto para a direita em 10 pixels */
+        }
+    }
+        
+    .verde-confirmado {
+        width: 40%;
     }
 
     .logotipo-hotsteak {
@@ -78,27 +158,26 @@
     }
 
     .logotipo-hotsteak img {
-        width: 60%; /* Reduz o tamanho da logo para 80% da largura da tela */
-        margin-left: 20px;
-        margin-top: 60px;
+        width: 80%; /* Reduz o tamanho da logo para 80% da largura da tela */
+        margin: 20px 0; /* Melhora o espaçamento */
     }
 
-    .placeholder-small {
-        width: 90%;
-    }   
-
-    h1 {
-        font-size: 18px;
+    .btn-tela-inicial {
+        width: 50%; /* Ocupa 100% da largura da tela */
+        margin: 30px 0; /* Melhora o espaçamento */
     }
 
-    p {
-        font-size: 16px;
+    .txt-senha-alterada {
+        font-size: 30px; /* Reduz o tamanho da fonte */
     }
 
-    .voltar-button,
-    .avancar-button {
+    .titulo-recuperacao-senha,
+    .txt-inserir-dados {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+    }
+
+    .avancar-button,
+    .voltar-button {
         padding: 8px 12px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 10px 0; /* Melhora o espaçamento */
     }
-}
