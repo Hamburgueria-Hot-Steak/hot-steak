@@ -145,8 +145,8 @@
       width: 50%; /* Ajusta a largura do campo de entrada para 60% da largura disponível */
       font-size: 14px; /* Ajusta o tamanho do texto para 14 pixels */
       margin-left: 50px; /* Desloca o campo de texto para a direita em 10 pixels */
+        }
     }
-  }  
         
     .verde-confirmado {
         width: 40%;

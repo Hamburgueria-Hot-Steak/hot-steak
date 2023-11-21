@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './OpcaoCartaoDebitoCredito.css';
 
 function OpcaoCartaoDebitoCredito() {
     const [aviso, setAviso] = useState('');
@@ -9,7 +10,7 @@ function OpcaoCartaoDebitoCredito() {
         const numeroCartao = document.querySelector('.red-input-filled').value;
 
         if (!numeroCartao.trim()) {
-            setAviso('É obrigatório preencher o número do cartão de crédito/débito.');
+            setAviso('É obrigatório preencher o número do cartão de crédito/débito e o valor em R$.');
         } else {
             // Lógica para avançar quando os dados estão preenchidos corretamente
             setAviso(''); // Limpa a mensagem de aviso
@@ -24,7 +25,13 @@ function OpcaoCartaoDebitoCredito() {
                 <h1 className="txt-inserir-pix">DIGITE O NÚMERO DO SEU CARTÃO DE CRÉDITO/DÉBITO:</h1>
                 <input
                     type="text"
-                    placeholder=""
+                    placeholder="Nº do seu cartão de crédito/débito: "
+                    className="red-input-filled"
+                />
+
+                <input
+                    type="text"
+                    placeholder="Digite um valor em R$: "
                     className="red-input-filled"
                 />
                 <button className="btn-avancar" onClick={handleAvancarClick}>

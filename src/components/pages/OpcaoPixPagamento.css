@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
 
-body {
+.design-tela-opcao-pix-pagamento {
     margin: 0;
     padding: 0;
+    padding-top: 02vh;
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
@@ -43,6 +44,7 @@ body {
 @media only screen and (max-width: 768px) {
     .section-opcao-pix {
         margin-top: 140px; /* Ajuste conforme necessário para telas menores */
+        width: 300px;
     }
 
     .red-input-filled {

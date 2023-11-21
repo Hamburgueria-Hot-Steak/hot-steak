@@ -4,12 +4,13 @@ import './OpcaoPixPagamento.css';
 
 function OpcaoPixPagamento() {
     const [chavePix, setChavePix] = useState('');
-    const [aviso, setAviso] = useState('');
+    const [valorDinheiro, setValorDinheiro] = useState('');
+    const [aviso, setAviso] = useState(''); // Adicionando o estado para aviso
     const navigate = useNavigate(); // Usando useNavigate para obter a função de navegação
 
     const handleAvancarClick = () => {
-        if (chavePix.trim() === '') {
-            setAviso('É obrigatório preencher a Chave Pix');
+        if (chavePix.trim() === '' || valorDinheiro.trim() === '') {
+            setAviso('É obrigatório preencher a Chave Pix e o valor em R$');
         } else {
             // Lógica para avançar quando os dados estão preenchidos corretamente
             setAviso(''); // Limpa a mensagem de aviso
@@ -28,6 +29,14 @@ function OpcaoPixPagamento() {
                     className="red-input-filled"
                     value={chavePix}
                     onChange={(e) => setChavePix(e.target.value)}
+                />
+
+                <input
+                    type="text"
+                    placeholder="Digite o valor em R$:  "
+                    className="red-input-filled"
+                    value={valorDinheiro}
+                    onChange={(e) => setValorDinheiro(e.target.value)}
                 />
                 <button className="btn-avancar" onClick={handleAvancarClick}>
                     AVANÇAR

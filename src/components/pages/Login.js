@@ -49,6 +49,7 @@ const Login = () => {
         } else {
           // Redirecionar para outra página
           alert('Login realizado com sucesso!');
+          navigate('/TelaPagamento');
         }
       } else {
         alert('Login e/ou senha incorretas. Tente novamente.');

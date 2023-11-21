@@ -3,7 +3,7 @@
 /* Estilos padrão */
 .design-tela-rastreio {
     margin: 0;
-    padding: 0;
+    padding: 02px;
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
@@ -37,6 +37,7 @@
 /* Adicionando media queries para tamanhos de tela menores */
 @media only screen and (max-width: 768px) {
     .section-rastreio-pedido {
+        width: 300px;
         margin-top: 80px; /* Ajuste conforme necessário para telas menores */
     }
 

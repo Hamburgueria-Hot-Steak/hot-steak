@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bowlby+One+SC&family=Inter:wght@400;500&family=Staatliches&display=swap');
 
-/* Estilos padrão */
 .design-tela-opcao-dinheiro {
     margin: 0;
-    padding: 0;
+    padding: 02px;
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
@@ -23,6 +22,7 @@
 /* Adicionando media queries para tamanhos de tela menores */
 @media only screen and (max-width: 768px) {
     .section-opcao-dinheiro {
+        width: 300px;
         margin-top: 80px; /* Ajuste conforme necessário para telas menores */
     }
 }

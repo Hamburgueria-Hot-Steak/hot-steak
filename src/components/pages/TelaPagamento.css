@@ -50,4 +50,8 @@
     .logo-container img {
         width: 100%; /* Faz a imagem ocupar toda a largura do contêiner em telas menores */
     }
+
+    .section-pagamento {
+        width: 300px;
+    }
 }
