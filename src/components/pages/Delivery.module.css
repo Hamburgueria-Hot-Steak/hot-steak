@@ -22,7 +22,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     gap: 2rem;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 @media (min-width: 768px) {
@@ -44,13 +44,14 @@
     .burguersItens,
     .sideDishesItens {
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 5% auto; /* Deslocamos para o centro vertical e horizontal */
+        margin: auto; /* Deslocamos para o centro vertical e horizontal */
         max-width: 1024px;
+        gap: 2rem;
     }
 
     .title {
         font-size: 6rem;
-        margin: 5% auto 2% auto; /* Deslocamos para o centro vertical e horizontal, com uma margem menor na parte inferior */
+        margin: auto; /* Deslocamos para o centro vertical e horizontal */
         max-width: 1024px;
     }
 }
@@ -59,14 +60,14 @@
     .combosItens,
     .burguersItens,
     .sideDishesItens {
-        margin: 5% auto; /* Deslocamos para o centro vertical e horizontal */
+        margin: auto; /* Deslocamos para o centro vertical e horizontal */
         max-width: 1366px;
     }
 
     .title {
         font-size: 5rem;
         padding: 1%;
-        margin: 5% auto 2% auto; /* Deslocamos para o centro vertical e horizontal, com uma margem menor na parte inferior */
+        margin: auto; /* Deslocamos para o centro vertical e horizontal */
         max-width: 1366px;
     }
 }
