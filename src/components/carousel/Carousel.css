@@ -10,7 +10,7 @@
 
 /* Estilos para as bolinhas (dots) do carrossel */
 .slick-dots {
-  bottom: -25px; /* Ajuste a distância do fundo conforme necessário para dispositivos maiores */
+  bottom: -2px; /* Ajuste a distância do fundo conforme necessário para dispositivos maiores */
 }
 
 .slick-dots li button:before {
@@ -25,12 +25,12 @@
 /* Estilos responsivos para dispositivos menores */
 @media (max-width: 768px) {
   .carousel-image {
-    width: 90%; /* Ajuste a largura para dispositivos menores */
-    padding: 5px; /* Ajuste o padding para dispositivos menores */
+    width: 100%; /* Ajuste a largura para dispositivos menores */
+    padding: -5px; /* Ajuste o padding para dispositivos menores */
   }
 
   .slick-dots {
-    bottom: -10px; /* Ajuste a distância do fundo para dispositivos menores */
+    bottom: 2px; /* Ajuste a distância do fundo para dispositivos menores */
   }
 
   .slick-dots li button:before {
