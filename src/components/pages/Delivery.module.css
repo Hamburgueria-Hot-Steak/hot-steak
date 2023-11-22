@@ -1,68 +1,73 @@
-
 .combosItens{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
-    justify-content: space-around;
-    gap: 3.5rem;
-    margin-left: 11.5%;
-}
-
-.combos{
-    margin: 3% 0;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 5%;
 }
 
 .title{
     background-color: #4F1212;
     color: white;
     padding: 1%;
-    font-size: 6rem;
-    margin-bottom: 5%;
+    font-size: 4rem;
+    margin-bottom: 3%;
     text-align: center;
 }
 
-
-.burguers{
-    margin-bottom: 5%;
-}
-
-.burguersItens{
+.burguersItens,
+.sideDishesItens {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+    grid-template-columns: 1fr;
     align-items: center;
-    gap: 3rem;
-    margin-left: 11.5%;
+    gap: 2rem;
+    margin-left: 5%;
 }
 
-.sideDishes{
-    margin-bottom: 5%;
-}
-
-.sideDishesItens{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3rem;
-    margin-left: 11.5%;
-}
-
-@media (max-width: 1366px){
-    .combosItens{
+@media (min-width: 768px) {
+    .combosItens,
+    .burguersItens,
+    .sideDishesItens {
+        grid-template-columns: 1fr 1fr;
         margin-left: 10%;
     }
 
-    .burguersItens{
-        margin-left: 10%;
+    .title {
+        font-size: 5rem;
+        margin-bottom: 4%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .combosItens,
+    .burguersItens,
+    .sideDishesItens {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5% auto; /* Deslocamos para o centro vertical e horizontal */
+        max-width: 1024px;
     }
 
-    .sideDishesItens{
-        margin-left: 10%;
+    .title {
+        font-size: 6rem;
+        margin: 5% auto 2% auto; /* Deslocamos para o centro vertical e horizontal, com uma margem menor na parte inferior */
+        max-width: 1024px;
     }
-    
-    .main section h2{
+}
+
+@media (min-width: 1366px) {
+    .combosItens,
+    .burguersItens,
+    .sideDishesItens {
+        margin: 5% auto; /* Deslocamos para o centro vertical e horizontal */
+        max-width: 1366px;
+    }
+
+    .title {
         font-size: 5rem;
         padding: 1%;
+        margin: 5% auto 2% auto; /* Deslocamos para o centro vertical e horizontal, com uma margem menor na parte inferior */
+        max-width: 1366px;
     }
 }
+

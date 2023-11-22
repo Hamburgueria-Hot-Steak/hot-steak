@@ -18,7 +18,6 @@
     /* Adicione outras propriedades de estilo conforme necessário */
 }
 
-
 /* Contêiner principal */
 .menu-container {
     position: relative; /* Adiciona posição relativa para alinhar os links com base nesse contêiner */
@@ -32,6 +31,7 @@
     height: 74px;
     display: flex;
     align-items: center;
+    color: #fffff; /* Adiciona a cor branca ao texto dos links */
 }
 
 /* Adicione uma media query para telas menores */
@@ -99,7 +99,7 @@
 
 /* Estilo para os links do menu */
 .menu-container a {
-    color: white; /* Cor do texto dos links */
+    color: #fffff; /* Cor do texto dos links */
     text-decoration: none; /* Remova a decoração de texto */
     margin-right: 20px; /* Adicione espaçamento entre os links */
 }

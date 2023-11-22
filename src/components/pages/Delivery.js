@@ -1,12 +1,11 @@
 import { useState} from 'react';
 import Item from '../item/Item'
 import styles from './Delivery.module.css'
-import NavBar from '../navbar/Navbar'
+import Navbar from '../navbar/Navbar'
 import Carousel from '../carousel/Carousel';
 import Footer from '../footer/Footer'
 
-
-function Teste(){
+function Delivery() {
     
     const [combos, setCombos] = useState([
         {
@@ -139,7 +138,7 @@ function Teste(){
     ])
     return(
         <div className={styles.main}>
-            <NavBar/>
+            <Navbar/>
             
             <Carousel/>
 
@@ -173,4 +172,4 @@ function Teste(){
 }
 
 
-export default Teste;
+export default Delivery;

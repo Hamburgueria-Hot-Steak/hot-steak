@@ -5,10 +5,9 @@ const Navbar = () => {
     return (
       <nav className="menu-container" style={{ justifyContent: "center"}}>
           <a href="./Home"><img className="logotipo-hot-steak-horizontal" src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak Horizontal" /></a>
-          <a href="./Home">Home</a>
-          <a href="./Delivery">Delivery</a>      
-          <a href="#contato">Contato</a>
-
+          <a style={{ color: 'white' }} href="./Home">Home</a>
+          <a style={{color: 'white'}} href="./Delivery">Delivery</a>
+          <a style={{ color: 'white' }} href="#contato">Contato</a>
       </nav>
     );
 }

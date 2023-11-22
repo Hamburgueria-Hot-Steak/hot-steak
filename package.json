@@ -17,6 +17,8 @@
     "slick-carousel": "^1.8.1",
     "speakeasy": "^2.0.0",
     "twilio": "^4.19.0",
+    "typewriter": "^9.1.0",
+    "typewriter-effect": "^2.21.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
