@@ -40,7 +40,7 @@ function Footer(){
                         <ul>
                             <li><a href="./Home">HOME</a></li>
                             <li><a href="./Delivery">DELIVERY</a></li>
-                            <li><a href="./Contato">CONTATO</a></li>
+                            <li><a href="./Login">ENTRAR</a></li>
                         </ul>
                     </section>
 

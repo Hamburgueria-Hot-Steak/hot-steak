@@ -23,9 +23,10 @@ body {
 }
 
 .txt-comandas {
-  font-family: "Staatliches";
+  font: 500 3rem "Staatliches", sans-serif;
   color: #4F1212;
   text-align: center;
+  margin: 2rem;
 }
 
 .link-no-underline {
@@ -35,8 +36,17 @@ body {
 /* Estilos para a container principal */
 .pedidos-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os grupos se movam para a próxima linha em telas pequenas */
+    align-items: center;
     justify-content: space-around; /* ou space-between para ajustar o espaçamento entre os grupos */
+  }
+
+  .pedidos-container section{
+    width: 25rem;
+    margin: 1rem;
+  }
+
+  .pedidos-container section p{
+    text-align: center;
   }
   
 /* Estilos para cada grupo */

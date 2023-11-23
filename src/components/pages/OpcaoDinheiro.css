@@ -2,21 +2,34 @@
 
 .design-tela-opcao-dinheiro {
     margin: 0;
-    padding: 02px;
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .txt-quantia-dinheiro {
-    font-family: "Staatliches";
+    font: 400 2.5rem "Staatliches", sans-serif;
     color: #C81B1B;
 }
 
 .section-opcao-dinheiro {
-    margin-top: 140px; /* Ajuste conforme necessário para o espaçamento superior */
-    margin-bottom: 20px; /* Ajuste conforme necessário para o espaçamento inferior */
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.068); 
+    padding: 1.3rem;
+    width: 30rem;
+    border-radius: 1.3rem;
+}
+
+.red-input-filled{
+    width: 80%;
+}
+
+.btn-avancar{
+    width: 40%;
 }
 
 /* Adicionando media queries para tamanhos de tela menores */

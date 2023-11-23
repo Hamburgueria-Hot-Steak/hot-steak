@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './AddButtons.module.css'
+import Cart from '../cart/Cart'
 
 function AddButtons({price}){
 
@@ -16,7 +17,7 @@ function AddButtons({price}){
                 <span className={styles.counter}>{counter}</span>
                 <button className={styles.buttonQtd} onClick={() => {setCounter(counter + 1)}}>+</button>
             </div>
-            <button className={styles.buttonAdd}>Adicionar R${price.toFixed(2)}</button>
+            <button className={styles.buttonAdd}>Adicionar R${price.toFixed(2)} </button>
         </div>
     )
 }

@@ -5,12 +5,12 @@
     margin: 0;
     padding: 0;
     background-color: #4F1212;
-    width: 200vh;
+    width: 100vw;
     height: 100vh; /* Adiciona altura de 100% da tela */
 }
 
 .txt-escolha-pagamento {
-    color: #C81B1B;
+    color:  #4F1212;
     font-family: "Staatliches";
 }
 
@@ -20,11 +20,16 @@
 
 .design-tela-pagamento {
     display: flex;
-    align-items: flex-start; /* Alinha os itens no topo do contêiner (canto superior esquerdo) */
+    align-items:center; 
+    justify-content: center;
 }
 
 .section-pagamento {
-    margin-top: 100px; /* Ajuste conforme necessário para mover a section para baixo */
+    border: solid 1px black;
+    padding: 1% 2%;
+    border-radius: 2rem;
+    background-color: white;
+    text-align: center;
 }
 
 .img-pix,
@@ -32,6 +37,13 @@
 .img-dinheiro {
     max-width: 50px; /* Ajuste conforme necessário */
     height: auto;
+    margin: 1rem;
+}
+
+.img-pix:hover,
+.img-debito-credito:hover,
+.img-dinheiro:hover{
+    transform: scale(1.1);
 }
 
 .logo-container {

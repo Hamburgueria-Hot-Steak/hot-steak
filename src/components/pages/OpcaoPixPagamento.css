@@ -7,17 +7,20 @@
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .txt-inserir-pix {
-    font-family: "Staatliches";
+    font: 400 2.5rem "Staatliches", sans-serif;
     color: #C81B1B;
 }
 
 .btn-avancar {
     background-color: red;
     color: white;
-    font-family: Staatliches;
+    font-family:  Staatliches;
     border: none;
     padding: 10px 16px; /* Ajustei o padding para manter o tamanho dos botões iguais */
     border-radius: 5px;
@@ -27,9 +30,12 @@
 }
 
 .section-opcao-pix {
-    margin-top: 140px; /* Ajuste conforme necessário para o espaçamento superior */
-    margin-bottom: 20px; /* Ajuste conforme necessário para o espaçamento inferior */
     text-align: center; /* Centraliza o conteúdo horizontalmente */
+    border: solid 1px rgba(0, 0, 0, 0.253);
+    padding: 2rem;
+    background-color: #ffff;
+    border-radius: 1.5rem;
+    width: 30rem;
 }
 
 /* Estilos padrão */
@@ -38,6 +44,12 @@
     max-width: 300px;
     padding: 10px;
     box-sizing: border-box;
+    background-color: rgb(206, 199, 199);
+    margin-top: 2rem;
+}
+
+.btn-avancar{
+    width: 40%;
 }
 
 /* Adicionando media queries para tamanhos de tela menores */

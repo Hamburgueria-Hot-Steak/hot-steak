@@ -31,7 +31,7 @@
     height: 74px;
     display: flex;
     align-items: center;
-    color: #fffff; /* Adiciona a cor branca ao texto dos links */
+    color: #ffff; /* Adiciona a cor branca ao texto dos links */
 }
 
 /* Adicione uma media query para telas menores */
@@ -99,7 +99,7 @@
 
 /* Estilo para os links do menu */
 .menu-container a {
-    color: #fffff; /* Cor do texto dos links */
+    color: #ffff; /* Cor do texto dos links */
     text-decoration: none; /* Remova a decoração de texto */
     margin-right: 20px; /* Adicione espaçamento entre os links */
 }

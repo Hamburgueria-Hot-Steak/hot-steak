@@ -4,15 +4,15 @@
   margin: 0;
   padding: 0;
   background-color: #4F1212;
-  width: 200vh;
+  width: 100vw;
   height: 100vh; /* Adiciona altura de 100% da tela */
 }
 
 .txt-login {
     text-align: center;
     color: #C81B1B;
-    font-family: Staatliches;
-    font-size: 22px;
+    font-family: Staatliches;;
+    font-size: 3rem;
 }
 
 .tf-email, .tf-senha {
@@ -55,7 +55,7 @@
   
   .btn-entrar {
     background-color: #C81B1B;
-    width: 120px;
+    width: 30rem;
     height: 36px;
     border-radius: 20px;
     font-family: Arial;
@@ -155,6 +155,7 @@ h2 {
 
 .form-email {
   margin-bottom: 10px; /* Adicione uma margem inferior de 10px para separar os campos */
+  width: 25rem;
 }
 
 .form-control {

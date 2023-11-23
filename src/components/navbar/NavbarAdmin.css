@@ -49,6 +49,7 @@
         margin-top: 15px; /* Aumentei o espaçamento entre os links */
         bottom: 20px;
         max-width: 150px; /* Adicione um valor máximo para o tamanho da fonte */
+        color: white;
     }
 
     .menu-container {

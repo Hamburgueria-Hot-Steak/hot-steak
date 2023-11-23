@@ -11,6 +11,9 @@ h2{
     font: 600 9rem 'Staatliches', sans-serif;
 }
 
+.homeContainer p{
+    line-height: 3.5vh;
+}
 
 .secWelcomeTitle{
     font: 600 5.5rem 'Staatliches', sans-serif;
@@ -19,7 +22,7 @@ h2{
 }
 
 .pWelcome{
-    font: 700 1.7rem 'Montserrat', sans-serif;
+    font: 700 1.5rem 'Montserrat', sans-serif;
     text-align: justify;
     color: black;
 }
@@ -42,7 +45,7 @@ h2{
 }
 
 .pDelivery{
-    font: 700 1.7rem 'Montserrat', sans-serif;
+    font: 700 1.5rem 'Montserrat', sans-serif;
     text-align: justify;
     grid-area: b;
     color: white;
@@ -61,8 +64,7 @@ h2{
     align-items: center;
     grid-template-areas: 
     "a b"
-    "a c"
-    ;
+    "a c";
     text-align: center;
     gap: 2rem;
 }
@@ -77,6 +79,7 @@ h2{
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.562);
     transition: background-color 0.5s, border-color 0.5s;
     transition-timing-function: ease-out;
+    grid-area: c;
 }
 
 .buttonAboutDelivery:hover{
@@ -108,7 +111,7 @@ h2{
 }
 
 .aboutItens > p{
-    font: 700 1.5rem 'Montserrat', sans-serif;;
+    font: 700 1.4rem 'Montserrat', sans-serif;;
     text-align: justify;
     width: 31.25rem;
     color: black;

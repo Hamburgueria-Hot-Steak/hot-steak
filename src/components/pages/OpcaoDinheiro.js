@@ -22,7 +22,7 @@ function OpcaoDinheiro() {
     return (
         <div className="design-tela-opcao-dinheiro">
             <section className="section-opcao-dinheiro">
-                <h1 className="txt-quantia-dinheiro">DIGITE UMA QUANTIA EM DINHEIRO</h1>
+                <h1 className="txt-quantia-dinheiro">DINHEIRO</h1>
                 <input
                     type="text"
                     placeholder="Digite um valor em R$"

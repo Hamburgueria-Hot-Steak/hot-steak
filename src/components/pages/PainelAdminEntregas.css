@@ -17,11 +17,13 @@
 .icone-confirmar {
     width: 50px;
     height: auto;
+    margin: 0 42%;
 }
 
 .icone-entrega-pendente {
     width: 50px;
     height: auto;
+    margin: 0 42%;
 }
 
 /* Adicione regras de mídia para ajustar o layout em telas de celular */

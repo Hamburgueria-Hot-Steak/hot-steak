@@ -21,8 +21,8 @@ function OpcaoCartaoDebitoCredito() {
 
     return (
         <div className="design-tela-opcao-cartao-debito-credito">
-            <section className="section-opcao-pix">
-                <h1 className="txt-inserir-pix">DIGITE O NÚMERO DO SEU CARTÃO DE CRÉDITO/DÉBITO:</h1>
+            <section className="section-opcao-cartao">
+                <h1 className="txt-inserir-cartao">CARTÃO DE CRÉDITO/DÉBITO:</h1>
                 <input
                     type="text"
                     placeholder="Nº do seu cartão de crédito/débito: "

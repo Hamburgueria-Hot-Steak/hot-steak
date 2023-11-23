@@ -3,16 +3,16 @@
 /* Estilos padrão */
 .design-tela-rastreio {
     margin: 0;
-    padding: 02px;
     background-color: #4F1212;
     width: 100%; /* Largura ocupando 100% da largura da tela */
     height: 100vh; /* Altura de 100% da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .txt-acompanhe-seu-pedido {
-    font-family: "Staatliches";
-    color: #C81B1B;
-    text-align: left;
+    font: 500 4rem "Staatliches", sans-serif;
 }
 
 .txt-pedido-aceito, .txt-pedido-pronto-entrega, .txt-pedido-indo  {
@@ -25,13 +25,19 @@
     font-family: "Roboto";
     color: rgba(0, 0, 0, 0.38);
     text-align: left;
-    font-size: 35px;
+    font-size: 1.7rem;
 }
 
 .section-rastreio-pedido {
-    margin-top: 140px; /* Ajuste conforme necessário para o espaçamento superior */
-    margin-bottom: 20px; /* Ajuste conforme necessário para o espaçamento inferior */
     text-align: center; /* Centraliza o conteúdo horizontalmente */
+    border: solid 1px rgba(0, 0, 0, 0.137);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.avancar-button{
+    font-size: 1.5rem;
 }
 
 /* Adicionando media queries para tamanhos de tela menores */

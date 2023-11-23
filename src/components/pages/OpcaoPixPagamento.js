@@ -22,7 +22,7 @@ function OpcaoPixPagamento() {
     return (
         <div className="design-tela-opcao-pix-pagamento">
             <section className="section-opcao-pix">
-                <h1 className="txt-inserir-pix">DIGITE O TELEFONE/EMAIL ASSOCIADO AO SEU PIX</h1>
+                <h1 className="txt-inserir-pix">ÁREA PIX</h1>
                 <input
                     type="text"
                     placeholder="Chave Pix: "

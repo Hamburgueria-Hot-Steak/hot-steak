@@ -74,7 +74,7 @@ const Login = () => {
           </Link>
           <div className="login-container">
             <div className="login-form">
-              <p className="txt-login">FAÇA SEU LOGIN</p>
+              <p className="txt-login">LOGIN</p>
               <div className="form-email" style={{ textAlign: 'center' }}>
                 <input
                   type="text"
