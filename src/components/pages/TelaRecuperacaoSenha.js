@@ -37,7 +37,7 @@ function TelaRecuperacaoSenha() {
         />
 
         {showWarning && (
-          <p className="aviso-campo-obrigatorio" style={{ color: 'red', fontSize: '18px' }}>
+          <p className="aviso-campo-obrigatorio">
             Por favor, preencha seus dados!
           </p>
         )}
