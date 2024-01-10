@@ -42,19 +42,19 @@ function TelaRecuperacaoSenha() {
           </p>
         )}
 
-        <div className="botoes-tela-recuperacao-senha">
-          <Link to="/Login">
-            <button className="voltar-button">Voltar</button>
-          </Link>
+  <div className="botoes-tela-recuperacao-senha">
+    <Link to="/Login">
+      <button className="btn-voltar">Voltar</button>
+    </Link>
 
-          <Link to={dadosPreenchidos() ? '/TelaRecuperacaoSenhaCodigo' : '/TelaRecuperacaoSenha'}>
-            <button className="avancar-button" onClick={handleAvancarClick}>
-              Avançar
-            </button>
-          </Link>
-        </div>
-      </section>
+    <Link to={dadosPreenchidos() ? '/TelaRecuperacaoSenhaCodigo' : '/TelaRecuperacaoSenha'}>
+      <button className="btn-avancar" onClick={handleAvancarClick}>
+        Avançar
+      </button>
+    </Link>
     </div>
+  </section>
+</div>
   );
 }
 

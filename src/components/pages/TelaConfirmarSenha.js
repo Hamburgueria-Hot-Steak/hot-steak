@@ -98,11 +98,11 @@ function TelaConfirmarSenha() {
 
         <div className="botoes-tela-recuperacao-senha">
           <Link to="/TelaRecuperacaoSenhaCodigo">
-            <button className="voltar-button">Voltar</button>
+            <button className="btn-voltar">Voltar</button>
           </Link>
 
           <Link to={senha !== '' ? '/TelaSenhaAlterada' : '/TelaConfirmarSenha'}>
-          <button className="avancar-button" onClick={handleAvancarClick}>
+          <button className="btn-confirmar" onClick={handleAvancarClick}>
            Confirmar
           </button>
         </Link>

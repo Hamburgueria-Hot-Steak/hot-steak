@@ -2,14 +2,47 @@
     margin: 0;
     padding: 0;
     background-color: #4F1212;
-    width: 200vh;
-    height: 100vh; /* Adiciona altura de 100% da tela */
+    width: 100vw; /* Utilize vw para a largura, ocupando 100% da largura da tela */
+    height: 100vh;
+    background-size: cover; /* Cobrirá completamente a tela */
+}
+
+.botoes-tela-recuperacao-senha {
+    text-align: center;
+}
+
+.btn-voltar,
+.btn-avancar {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px 10px;
+    font-size: 12px;
+    border: none;
+}
+
+.btn-avancar {
+    margin-left: 10px; /* Adicionei margem ao botão "Avançar" para criar espaço entre os botões */
 }
 
 .logotipo-hotsteak {
     padding: 40px;
     margin: 0;
     text-align: center;
+}
+
+.design-tela-recuperacao-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+section {
+    margin: 0 auto; /* Isso centraliza a section na tela */
+    max-width: 600px; /* Ajuste o valor conforme necessário para aumentar o tamanho */
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
 }
 
 .logotipo-hotsteak-recuperacao-senha-codigo {
@@ -39,8 +72,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     height: auto;
-    margin-left: 60px;
 }
 
 .logotipo-hotsteak-tela-recuperacao-senha {
@@ -61,7 +94,18 @@
 .titulo-recuperacao-senha {
     font-family: 'Staatliches';
     color: #C81B1B;
+    font-size: 20px;
+    text-align: center;
 }
+
+.red-input-filled {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .red-input {
+    width: 100%; /* Isso garante que o campo ocupe a largura máxima disponível */
+  }  
 
 .txt-inserir-dados {
     font-family: 'Staatliches';
@@ -70,33 +114,75 @@
     text-align: center;
 }
 
-.avancar-button {
-    padding: 10px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 .aviso-campo-obrigatorio {
     font-family: 'Abel';
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
 }
 
-.voltar-button {
-    font-family: Staatliches;
+.btn-voltar {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    padding: 12px 10px; /* Reduzi o padding */
+    font-size: 12px; /* Reduzi o tamanho da fonte */
+    margin-right: 10px; /* Adicionei margem à direita para separar os botões */
+}
+
+.section-codigo {
+    max-width: 800px;
+}
+
+.btn-avancar {
+    max-width: 90px;
+    border-radius: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px 10px; /* Reduzi o padding */
+    font-size: 12px; /* Reduzi o tamanho da fonte */    
+}
+
+.btn-enviar-codigo,
+.btn-avancar,
+.btn-confirmar,
+.btn-voltar {
+    max-width: 90px;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px; /* Ajustei o padding para dar mais consistência */
+    font-size: 20px;
+    margin-left: 10px; /* Ajustei a margem para dar espaçamento entre os botões */
+    border: none;
+}
+
+.btn-confirmar {
+    background-color: red;
+    font-family: 'Staatliches';
+    color: white;
+    font-size: 15px;
+    width: 90px;
+    height: auto;
+}
+
+.btn-enviar-codigo {
+    background-color: red;
+    font-family: 'Staatliches';
+    color: white;
+}
+
+.btn-voltar {
+    font-family: 'Staatliches';
     background-color: #EEEEEE;
     color: red;
-    border: none;
-    margin-right: 20px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.avancar-button {
-    font-family: Staatliches;
-    background-color: red;
-    color: white;
-    border: none;
-    margin-left: 20px;
-}
 
 /* Ajustes para tornar o design mais responsivo */
 @media (max-width: 600px) {
@@ -142,9 +228,9 @@
 /* Adaptações para dispositivos móveis, por exemplo, smartphones */
 @media screen and (max-width: 500px) {
     .red-input {
-      width: 50%; /* Ajusta a largura do campo de entrada para 60% da largura disponível */
+      width: 60%; /* Ajusta a largura do campo de entrada para 60% da largura disponível */
       font-size: 14px; /* Ajusta o tamanho do texto para 14 pixels */
-      margin-left: 50px; /* Desloca o campo de texto para a direita em 10 pixels */
+      margin-left: 90px; /* Desloca o campo de texto para a direita em 10 pixels */
         }
     }
         
@@ -167,6 +253,10 @@
         margin: 30px 0; /* Melhora o espaçamento */
     }
 
+    .botoes-tela-recuperacao-senha {
+        text-align: center;
+    }
+
     .txt-senha-alterada {
         font-size: 30px; /* Reduz o tamanho da fonte */
     }
@@ -176,8 +266,8 @@
         font-size: 18px; /* Reduz o tamanho da fonte */
     }
 
-    .avancar-button,
-    .voltar-button {
+    .btn-voltar,
+    .btn-avancar {
         padding: 8px 12px;
         margin: 10px 0; /* Melhora o espaçamento */
     }

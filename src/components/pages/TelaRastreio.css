@@ -36,7 +36,14 @@
     background-color: white;
 }
 
-.avancar-button{
+.btn-tela-inicial {
+    max-width: 90px;
+    background-color: red;
+    font-family: 'Staatliches';
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 90px;
     font-size: 1.5rem;
 }
 
@@ -53,5 +60,14 @@
 
     .txt-horario-pedido-gerado, .txt-horario-pedido-pronto-entrega, .txt-horario-pedido-indo {
         font-size: 28px; /* Ajuste o tamanho da fonte para telas menores */
+    }
+    .btn-tela-inicial {
+        background-color: red;
+        font-family: 'Staatliches';
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 90px;
+        font-size: 1.5rem;
     }
 }

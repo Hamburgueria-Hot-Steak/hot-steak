@@ -16,7 +16,7 @@ function TelaRastreio () {
                 <p className="txt-pedido-indo">⚠️ SEU PEDIDO ESTÁ INDO ATÉ VOCÊ!</p>
                 <p className="txt-horario-pedido-indo">Hoje, 23/11/2023 às 18:00</p>
                 <Link to="/Home">
-                    <button className="avancar-button">TELA INICIAL</button>
+                    <button className="btn-tela-inicial">TELA INICIAL</button>
                 </Link>
             </section>
         </div>

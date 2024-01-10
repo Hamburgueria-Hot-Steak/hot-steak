@@ -34,7 +34,7 @@ function TelaRecuperacaoSenhaCodigo() {
           <img src="./assets/Logotipo Hot Steak.png" alt="Logotipo Hot Steak" />
         </Link>
       </div>
-      <section>
+      <section class="section-codigo">
         <h1 className="titulo-recuperacao-senha">RECUPERAÇÃO DE SENHA</h1>
         <p className="txt-inserir-dados">DIGITE O SEU CÓDIGO DE RECUPERAÇÃO</p>
         <input
@@ -51,17 +51,19 @@ function TelaRecuperacaoSenhaCodigo() {
         )}
 
         <div>
+          <div class="botoes-tela-recuperacao-senha">
           <Link to="/TelaRecuperacaoSenha">
-            <button className="voltar-button">Voltar</button>
+            <button className="btn-voltar">Voltar</button>
           </Link>
 
-          <button className="avancar-button" onClick={handleAvancarClick}>
-            Enviar Código
+          <button className="btn-enviar-codigo" onClick={handleAvancarClick}>
+            Enviar
           </button>
-        </div>
-      </section>
-    </div>
-    </div>
+          </div>
+      </div>
+  </section>
+  </div>
+</div>
   );
 }
 
